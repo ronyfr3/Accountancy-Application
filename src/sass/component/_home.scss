@@ -2,6 +2,10 @@
   @include flex(column, center, center);
   margin-top: 1em;
   width: 100%;
+  padding-bottom: 34.7em;
+  @include media(P) {
+    padding-bottom: 90em;
+  }
   .home_content {
     width: 100%;
     .home_info {
@@ -14,7 +18,7 @@
         width: 50%;
         padding: 30px;
         @include media(P) {
-          width: 100%;
+          width: 94%;
           padding: 0;
         }
         .readmore {
@@ -111,6 +115,7 @@
           margin-bottom: 25px;
           @include media(P) {
             margin: 0;
+            width: 94%;
           }
           img {
             width: 100%;
@@ -120,7 +125,7 @@
               transform: scale(1.05);
             }
             @include media(P) {
-              width: 95%;
+              width: 100%;
               height: 100%;
               margin-bottom: 25px;
             }
@@ -135,6 +140,7 @@
               color: #6f6f6f;
               text-align: justify;
               word-spacing: 0.5px;
+              margin-bottom: 1.2em;
             }
           }
         }
@@ -212,39 +218,6 @@
     }
     @include media(P) {
       display: none;
-    }
-  }
-}
-
-// accreditations
-.accreditations {
-  @include flex(column, center, center);
-  width: 100%;
-  height: 270px;
-  background-color: #ddc9bd;
-  transform: translateY(-8px);
-  margin-bottom: 17.7em;
-  @include media(P) {
-    @include flex(column, center, center);
-  }
-  .accreditations_h1 {
-    font-weight: 600;
-    padding: 25px 0 5px 0;
-    margin: 0;
-  }
-  .accreditation_images {
-    @include flex(row, center, space-evenly);
-    flex-wrap: wrap;
-    width: 95%;
-    img {
-      width: 210px;
-      height: 100px;
-      margin: 7px;
-      @include media(P) {
-        width: 46%;
-        height: 200px;
-        margin: 7px;
-      }
     }
   }
 }

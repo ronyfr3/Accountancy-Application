@@ -128,17 +128,6 @@ const Home = () => {
             <img src="self2.jpeg" alt="" />
           </div>
         </div>
-
-        {/* Accreditations */}
-        <div className="accreditations">
-          <h1 className="accreditations_h1">Accreditations</h1>
-          <div className="accreditation_images">
-            <img src="acca.jpg" alt="" />
-            <img src="acca.jpg" alt="" />
-            <img src="acca.jpg" alt="" />
-            <img src="acca.jpg" alt="" />
-          </div>
-        </div>
       </div>
     </div>
   );

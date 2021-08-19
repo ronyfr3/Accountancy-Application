@@ -79,8 +79,9 @@
         display: flex;
       }
       .hmenu {
-        font-size: 26px;
+        font-size: 33px;
         cursor: pointer;
+        color: #18ba60;
       }
     }
     .header_image {
@@ -111,8 +112,9 @@
       }
     }
     .hideLinks {
+      z-index: 1000;
       position: absolute;
-      top: 147px;
+      top: 146px;
       left: 0;
       width: 100%;
       background-color: white;
