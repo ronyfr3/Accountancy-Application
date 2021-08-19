@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: $fontFamily;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3 {
+  color: #242424;
+}
+p {
+  font-weight: 300;
+}
+a {
+  font-weight: 300;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+  font-family: $fontFamily;
+}
+.app {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  display: block;
+  position: relative;
+  // padding-bottom: 700px; /* height of your footer */
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}

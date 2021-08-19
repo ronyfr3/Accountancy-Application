@@ -1,0 +1,93 @@
+.footer_section {
+  @include flex(column, center, center);
+  width: 100%;
+  background-color: #2e3143;
+}
+.footer_content {
+  @include flex(row, center, space-around);
+  padding: 0 20px 0 20px;
+  @include media(P) {
+    @include flex(column, center, center);
+  }
+}
+.footer_about {
+  @include flex(column, flex-start, center);
+  width: 60%;
+  margin-top: 1.5em;
+  margin-right: 2em;
+  @include media(P) {
+    margin-right: 0;
+  }
+  .footer_aboutUs {
+    border-bottom: 2px solid green;
+    color: #a3a4ac;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+  }
+  .footer_about_p {
+    color: white;
+  }
+  a {
+    color: #049a40;
+  }
+}
+.footer_links,
+.footer_services {
+  @include flex(column, flex-start, center);
+  width: 60%;
+  margin-top: 1.5em;
+  .footer_link_h1 {
+    border-bottom: 2px solid green;
+    color: #a3a4ac;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+  }
+  ul li a {
+    color: white;
+  }
+}
+.footer_contact {
+  @include flex(column, flex-start, center);
+  width: 60%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  .getInTouch {
+    border-bottom: 2px solid green;
+    color: #a3a4ac;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+  }
+  .footer_contact_p {
+    width: 100%;
+    color: white;
+    @include flex(row, center, flex-start);
+    line-height: 2em;
+  }
+  .footer_phn_logo {
+    margin-right: 5px;
+  }
+  .footer_clock_logo {
+    margin-right: 5px;
+  }
+  .footer_location_logo {
+    margin-right: 5px;
+  }
+  .footer_gmail_logo {
+    margin-right: 5px;
+  }
+}
+
+.bottom_Section_footer {
+  @include flex(row, center, center);
+  width: 100%;
+  padding: 10px 0;
+  background-color: #024d86;
+  .powerdby {
+    color: white;
+    .eazmltd {
+      color: rgb(105, 248, 105);
+      font-size: 14.5px;
+      font-weight: 500;
+    }
+  }
+}

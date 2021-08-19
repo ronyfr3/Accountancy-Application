@@ -1,0 +1,60 @@
+@mixin flex($dir, $align, $content) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $align;
+  justify-content: $content;
+}
+
+// https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
+// phone-only=P
+// tablet-portrait-up=TP
+// tablet-landscape-up=TL
+// desktop-up=D
+// big-desktop-up=BD
+@mixin media($size) {
+  @if $size == P {
+    @media (max-width: 599px) {
+      @content;
+    }
+  } @else if $size == TP {
+    @media (min-width: 600px) {
+      @content;
+    }
+  } @else if $size == TL {
+    @media (min-width: 900px) {
+      @content;
+    }
+  } @else if $size == D {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $size == BG {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}
+
+// @mixin media($point) {
+//   @if $point == D {
+//     @media (min-width: 70em) {
+//       @content;
+//     }
+//   } @else if $point == L {
+//     @media (min-width: 64em) {
+//       @content;
+//     }
+//   } @else if $point == T {
+//     @media (min-width: 50em) {
+//       @content;
+//     }
+//   } @else if $point == PT {
+//     @media (min-width: 37.5em) {
+//       @content;
+//     }
+//   } @else if $point == M {
+//     @media (max-width: 37.5em) {
+//       @content;
+//     }
+//   }
+// }

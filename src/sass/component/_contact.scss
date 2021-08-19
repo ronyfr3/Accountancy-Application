@@ -1,0 +1,47 @@
+.contactPage {
+  @include flex(column, center, center);
+  margin-top: 2em;
+  h1 {
+    &::after {
+      content: "";
+      border-bottom: 2px solid #000;
+      width: 6rem;
+      display: block;
+      margin-top: 0.1em;
+    }
+  }
+  form {
+    border: 1px solid rgb(46, 41, 41);
+    width: 500px;
+    height: 100%;
+    margin-top: 2.5em;
+    padding: 1em;
+    @include media(P) {
+      width: 80%;
+    }
+    label {
+      color: rgb(77, 76, 76);
+    }
+    input {
+      margin-bottom: 1.2em;
+      padding: 0.4em;
+      width: 96%;
+      outline: none;
+    }
+    select {
+      width: 99.5%;
+      padding: 0.5em;
+      outline: none;
+      margin-bottom: 1em;
+      margin-top: 0.5em;
+      text-transform: capitalize;
+    }
+    textarea {
+      margin-bottom: 1.2em;
+      padding: 0.4em;
+      width: 96.7%;
+      height: 70px;
+      outline: none;
+    }
+  }
+}
