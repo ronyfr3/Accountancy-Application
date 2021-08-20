@@ -2,9 +2,9 @@
   @include flex(column, center, center);
   margin-top: 1em;
   width: 100%;
-  padding-bottom: 34.7em;
+  padding-bottom: 37em;
   @include media(P) {
-    padding-bottom: 90em;
+    padding-bottom: 88.8em;
   }
   .home_content {
     width: 100%;
@@ -28,10 +28,9 @@
           background-color: rgb(26, 58, 202);
           padding: 13px 40px;
           color: white;
-          font-size: 17px;
+          @include font-size($p-font-sizes);
           @include media(P) {
             padding: 10px 30px;
-            font-size: 16px;
           }
           &:hover {
             background-color: #00a73b;
@@ -41,14 +40,12 @@
         .about_priority {
           text-align: start;
           text-transform: capitalize;
-          font-weight: 400;
-          font-size: 38px;
+          @include font-size($h1-font-sizes);
           margin-bottom: 5px;
           span {
             color: #00a63d;
           }
           @include media(P) {
-            font-size: 30px;
             text-align: center;
             margin-bottom: 0;
           }
@@ -57,9 +54,8 @@
           text-align: justify;
           word-spacing: 0.5px;
           line-height: 2em;
-          font-size: 20px;
+          @include font-size($p-font-sizes);
           @include media(P) {
-            font-size: 16px;
             word-spacing: 1px;
             line-height: 1.7em;
           }
@@ -88,14 +84,14 @@
       margin-top: 3em;
       .our_location {
         color: #00a63d;
-        font-size: 20px;
+        @include font-size($p-font-sizes);
         font-weight: 500;
         text-transform: capitalize;
       }
       .come_visit {
         text-transform: capitalize;
         font-weight: 500;
-        font-size: 35px;
+        @include font-size($h1-font-sizes);
         margin-bottom: 1em;
         @include media(P) {
           font-size: 30px;
@@ -134,13 +130,14 @@
             width: 95%;
             .com_name {
               margin: 0;
-              font-size: 28px;
+              @include font-size($h1-font-sizes);
             }
             .com_address {
               color: #6f6f6f;
               text-align: justify;
               word-spacing: 0.5px;
               margin-bottom: 1.2em;
+              @include font-size($p-font-sizes);
             }
           }
         }
@@ -166,13 +163,10 @@
     }
     .contact_use_to_book {
       margin-top: 1em;
-      font-size: 30px;
       font-weight: 500;
       line-height: 1em;
       color: white;
-      @include media(P) {
-        font-size: 25px;
-      }
+      @include font-size($h1-font-sizes);
     }
     form {
       @include flex(column, center, center);
@@ -199,7 +193,6 @@
         background-color: white;
         padding: 10px 50px;
         text-transform: uppercase;
-        margin-bottom: 2em;
         cursor: pointer;
         transition: background-color 0.2s ease-in;
         &:hover {

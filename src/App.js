@@ -4,7 +4,11 @@ import Home from "./Home";
 import Header from "./Components/header/Header";
 import Footer from "./Components/footer/Footer";
 import About from "./Layouts/about/About";
+import FAQ from "./Layouts/FAQ";
 import "./sass/main.css";
+import Career from "./Layouts/Career";
+import Contact from "./Layouts/contact/Contact";
+import Service from "./Layouts/Service";
 
 const App = () => {
   return (
@@ -13,6 +17,10 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/faq" component={FAQ} />
+        <Route exact path="/service" component={Service} />
+        <Route exact path="/career" component={Career} />
+        <Route exact path="/contact" component={Contact} />
       </Switch>
       <div className="footer">
         <Footer />

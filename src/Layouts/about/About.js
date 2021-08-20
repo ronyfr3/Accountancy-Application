@@ -8,16 +8,12 @@ import {
 import { FiFileText } from "react-icons/fi";
 import { BiLineChart } from "react-icons/bi";
 import { BsLifePreserver } from "react-icons/bs";
+import ImageBanner from "../../Components/ImageBanner";
 
 const About = () => {
   return (
     <div className="about_wrapper">
-      {/* IMAGE SECTION */}
-      <div className="headerImage_section">
-        <img src="aboutImg.jpg" alt="" />
-        <h1 className="about_aboutUs_h1">About Us</h1>
-      </div>
-
+      <ImageBanner name="about us" />
       {/* WHO WE ARE */}
       <div className="whoweare">
         <div className="whoweare_content">

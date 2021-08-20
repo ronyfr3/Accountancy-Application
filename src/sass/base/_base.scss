@@ -31,6 +31,32 @@ body {
   position: relative;
   font-family: $fontFamily;
 }
+p {
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+// SCROLLBAR DESIGN
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #00a73b;
+  outline: 1px solid slategrey;
+  // min-height: 30px; //works with page data
+}
+
+// HEADER FOOTER DESIGN
 .app {
   min-height: 100vh; /* will cover the 100% of viewport */
   display: block;

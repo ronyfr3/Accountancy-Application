@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
+import ImageBanner from "../../Components/ImageBanner";
+import Map from "./Map";
+
 const Contact = () => {
-  const [dropdown, setDropdown] = useState("");
-  console.log(dropdown);
   const [inV, setInv] = useState({
     name: "",
     email: "",
@@ -16,7 +17,7 @@ const Contact = () => {
       [name]: value,
     });
   };
-  const sendData = { ...inV, dropdown };
+  const sendData = { ...inV };
   const sendToGmail = async (e) => {
     e.preventDefault();
     axios({
@@ -32,85 +33,62 @@ const Contact = () => {
     });
   };
 
-  // LISTS
-  const lists = [
-    "mobile app development",
-    "web app development",
-    "custom app development",
-    "web & mobile app development",
-  ];
   return (
-    <div className="contactPage">
-      <h1>Get In Touch</h1>
-      <form onSubmit={sendToGmail}>
-        <label>Name</label>
-        <br></br>
-        <input
-          type="text"
-          name="name"
-          value={inV.name}
-          onChange={handleSubmit}
-          autocorrect="off"
-          autocapitalize="none"
-          autoComplete="off"
-        ></input>
-        <br></br>
-        <label>Email</label>
-        <br></br>
-        <input
-          type="email"
-          name="email"
-          value={inV.email}
-          onChange={handleSubmit}
-          autocorrect="off"
-          autocapitalize="none"
-          autoComplete="off"
-        ></input>
-        <br></br>
-        <label>Phone</label>
-        <br></br>
-        <input
-          type="text"
-          name="phone"
-          value={inV.phone}
-          onChange={handleSubmit}
-          autocorrect="off"
-          autocapitalize="none"
-          autoComplete="off"
-        ></input>
-        <br></br>
-        <label>type of services you are looking for</label>
-        <select
-          defaultValue={"DEFAULT"}
-          onChange={(e) => {
-            setDropdown(e.target.value);
-          }}
-        >
-          <option value="DEFAULT" disabled hidden>
-            Mobile App Development
-          </option>{" "}
-          {lists &&
-            lists.map((x, i) => {
-              return (
-                <option value={x} key={i}>
-                  {x}
-                </option>
-              );
-            })}
-        </select>
-        <br></br>
-        <label>Message</label>
-        <br></br>
-        <textarea
-          type="text"
-          name="message"
-          value={inV.message}
-          onChange={handleSubmit}
-        ></textarea>
-        <br></br>
-        <button>Submit</button>
-      </form>
-    </div>
+    <>
+      <ImageBanner name="Contact Us" />
+      <div className="contactPage">
+        <h1 className="feelfree_h1">FEEL FREE TO CONTACT US</h1>
+        <form onSubmit={sendToGmail}>
+          <label>Name</label>
+          <br></br>
+          <input
+            type="text"
+            name="name"
+            value={inV.name}
+            onChange={handleSubmit}
+            autocorrect="off"
+            autocapitalize="none"
+            autoComplete="off"
+          ></input>
+          <br></br>
+          <label>Email</label>
+          <br></br>
+          <input
+            type="email"
+            name="email"
+            value={inV.email}
+            onChange={handleSubmit}
+            autocorrect="off"
+            autocapitalize="none"
+            autoComplete="off"
+          ></input>
+          <br></br>
+          <label>Phone</label>
+          <br></br>
+          <input
+            type="text"
+            name="phone"
+            value={inV.phone}
+            onChange={handleSubmit}
+            autocorrect="off"
+            autocapitalize="none"
+            autoComplete="off"
+          ></input>
+          <br></br>
+          <label>Message</label>
+          <br></br>
+          <textarea
+            type="text"
+            name="message"
+            value={inV.message}
+            onChange={handleSubmit}
+          ></textarea>
+          <br></br>
+          <button className="submit_now_contactBtn">Submit now</button>
+        </form>
+        <Map />
+      </div>
+    </>
   );
 };
 

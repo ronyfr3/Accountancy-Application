@@ -18,10 +18,13 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <Link>faq's</Link>
+            <Link to="/faq">faq's</Link>
           </li>
           <li>
-            <Link>careers</Link>
+            <Link to="/career">careers</Link>
+          </li>
+          <li>
+            <Link to="/contact">contact</Link>
           </li>
           <li>
             <Link>
