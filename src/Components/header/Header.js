@@ -27,12 +27,10 @@ const Header = () => {
             <Link to="/contact">contact</Link>
           </li>
           <li>
-            <Link>
-              <span>
-                <ImPhone className="phone" />
-              </span>
+            <div className="phnNum">
+              <ImPhone className="phone" />
               <small>+44 20 3355 8839</small>
-            </Link>
+            </div>
           </li>
           <div className="icons_header">
             <FaFacebook className="header_social_icon1" />

@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
         <div className="footer_content">
           <div className="footer_about">
-            <h3 className="footer_aboutUs">About Us</h3>
+            <h1 className="footer_aboutUs">About Us</h1>
             <p className="footer_about_p">
               Look no further for an accountant in Chiswick, West London. Our
               headquarters is based in Chiswick Business Park.
@@ -29,7 +29,7 @@ const Footer = () => {
             <Link to="/about">Read More</Link>
           </div>
           <div className="footer_links">
-            <h3 className="footer_link_h1">Extra Links</h3>
+            <h1 className="footer_link_h1">Extra Links</h1>
             <ul>
               <li>
                 <Link>About Us</Link>
@@ -46,7 +46,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer_services">
-            <h3 className="footer_link_h1">Our Services</h3>
+            <h1 className="footer_link_h1">Our Services</h1>
             <ul>
               <li>
                 <Link>Business Services</Link>
@@ -63,7 +63,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer_contact">
-            <h3 className="getInTouch">Get In Touch</h3>
+            <h1 className="getInTouch">Get In Touch</h1>
             <div className="footer_address_section">
               <p className="footer_contact_p">
                 <HiLocationMarker className="footer_location_logo" />

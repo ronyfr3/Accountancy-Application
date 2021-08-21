@@ -5,6 +5,13 @@
   justify-content: $content;
 }
 
+// MIXIN FOR max-width:480px
+@mixin media-480 {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
 // https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
 // phone-only=P
 // tablet-portrait-up=TP
@@ -38,35 +45,105 @@
 // FLUID FONT SIZES
 
 $breakpoints: (
-  small: 480px,
-  medium: 700px,
-  // Previously 640px
-  large: 1024px,
+  320: 320px,
+  375: 375px,
+  425: 425px,
+  768: 768px,
+  1024: 1024px,
+  1440: 1440px,
+  2560: 2560px,
 );
 
 $p-font-sizes: (
-  null: (
+  320: (
+    14.5px,
+    1.5,
+  ),
+  375: (
+    14.5px,
+    1.5,
+  ),
+  425: (
     15px,
-    1.3,
+    1.5,
   ),
-  small: 16px,
-  medium: (
+  768: (
+    16px,
+    1.6,
+  ),
+  1024: (
     17px,
-    1.4,
+    1.7,
   ),
-  900px: 18px,
-  large: (
-    19px,
-    1.45,
+  1440: (
+    22px,
+    1.8,
   ),
-  1440px: 20px,
+  2560: (
+    42px,
+    2,
+  ),
 );
 
 $h1-font-sizes: (
-  null: 28px,
-  small: 31px,
-  medium: 33px,
-  large: 36px,
+  320: (
+    20px,
+    1.5,
+  ),
+  375: (
+    22.5px,
+    1.5,
+  ),
+  425: (
+    24px,
+    1.6,
+  ),
+  768: (
+    26px,
+    1.7,
+  ),
+  1024: (
+    30px,
+    1.7,
+  ),
+  1440: (
+    36px,
+    1.8,
+  ),
+  2560: (
+    70px,
+    1.8,
+  ),
+);
+$h2-font-sizes: (
+  320: (
+    16px,
+    1.5,
+  ),
+  375: (
+    17px,
+    1.5,
+  ),
+  425: (
+    20px,
+    1.6,
+  ),
+  768: (
+    22px,
+    1.7,
+  ),
+  1024: (
+    26px,
+    1.7,
+  ),
+  1440: (
+    30px,
+    1.8,
+  ),
+  2560: (
+    35px,
+    1.8,
+  ),
 );
 
 @mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
