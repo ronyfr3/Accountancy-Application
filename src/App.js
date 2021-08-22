@@ -5,10 +5,11 @@ import Header from "./Components/header/Header";
 import Footer from "./Components/footer/Footer";
 import About from "./Layouts/about/About";
 import FAQ from "./Layouts/FAQ";
-import "./sass/main.css";
 import Career from "./Layouts/Career";
 import Contact from "./Layouts/contact/Contact";
 import Service from "./Layouts/Service";
+import "react-multi-carousel/lib/styles.css";
+import "./sass/main.css";
 
 const App = () => {
   return (

@@ -2,9 +2,9 @@
   @include flex(column, center, center);
   margin-top: 1em;
   width: 100%;
-  padding-bottom: 37em;
+  padding-bottom: 39em;
   @include media(P) {
-    padding-bottom: 80em;
+    padding-bottom: 69em;
   }
   .home_content {
     width: 100%;

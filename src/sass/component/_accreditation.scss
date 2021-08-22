@@ -1,0 +1,22 @@
+.accreditations {
+  @include flex(column, center, center);
+  width: 100%;
+  height: 300px;
+  background-color: rgb(233, 231, 231);
+}
+.accreditations_h1 {
+  @include font-size($h1-font-sizes);
+}
+.carousel-container {
+  width: 90%;
+  height: 200px;
+}
+.item_class {
+  width: 200px;
+  height: 130px;
+}
+.acc_image {
+  width: 100%;
+  height: 120px;
+  transform: scale(94%);
+}

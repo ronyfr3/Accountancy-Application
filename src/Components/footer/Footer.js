@@ -4,21 +4,14 @@ import { BsFillClockFill } from "react-icons/bs";
 import { ImPhone } from "react-icons/im";
 import { HiLocationMarker } from "react-icons/hi";
 import { SiGmail } from "react-icons/si";
+import Accreditation from "./Accreditation";
 
 const Footer = () => {
   return (
     <>
       <div className="footer_section">
         {/* Accreditations */}
-        <div className="accreditations">
-          <h1 className="accreditations_h1">Accreditations</h1>
-          <div className="accreditation_images">
-            <img src="acca.jpg" alt="" />
-            <img src="ico.jpg" alt="" />
-            <img src="xero.png" alt="" />
-            <img src="books.png" alt="" />
-          </div>
-        </div>
+        <Accreditation />
         <div className="footer_content">
           <div className="footer_about">
             <h1 className="footer_aboutUs">About Us</h1>
