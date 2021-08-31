@@ -33,11 +33,7 @@ const Header = () => {
       </nav>
       <header>
         <div className="header_image">
-          <img src="priority1.png" alt="" />
-          <div className="header_image_content">
-            <article>Priority Accountancy</article>
-            <small>we're here to assist your business succeed</small>
-          </div>
+          <img src="prio.jpg" alt="" />
         </div>
 
         <div className={show ? "hideLinks" : "second_header"}>
