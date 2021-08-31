@@ -18,15 +18,6 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/faq">faq's</Link>
-          </li>
-          <li>
-            <Link to="/career">careers</Link>
-          </li>
-          <li>
-            <Link to="/contact">contact</Link>
-          </li>
-          <li>
             <div className="phnNum">
               <ImPhone className="phone" />
               <small>+44 20 3355 8839</small>
@@ -67,6 +58,11 @@ const Header = () => {
               </Link>
             </li>
             <li>
+              <Link to="/contact" onClick={() => setShow(false)}>
+                contact
+              </Link>
+            </li>
+            <li>
               <Link to="/news" onClick={() => setShow(false)}>
                 news
               </Link>
@@ -74,6 +70,16 @@ const Header = () => {
             <li>
               <Link to="/resource" onClick={() => setShow(false)}>
                 resources
+              </Link>
+            </li>
+            <li>
+              <Link to="/career" onClick={() => setShow(false)}>
+                careers
+              </Link>
+            </li>
+            <li>
+              <Link to="/faq" onClick={() => setShow(false)}>
+                faq's
               </Link>
             </li>
           </ul>

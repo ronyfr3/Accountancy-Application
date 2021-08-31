@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import ImageBanner from "../../Components/ImageBanner";
-import Map from "./Map";
 
 const Contact = () => {
   const [inV, setInv] = useState({
@@ -10,7 +8,7 @@ const Contact = () => {
     phone: "",
     message: "",
   });
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setInv({
       ...inV,
@@ -34,61 +32,62 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <ImageBanner name="Contact Us" />
-      <div className="contactPage">
-        <h1 className="feelfree_h1">FEEL FREE TO CONTACT US</h1>
+    <div className="contact_form">
+      <div className="contact_form_content">
+        <p className="contact_use_to_book">
+          Contact Us To Book Your Initial Consultation
+        </p>
         <form onSubmit={sendToGmail}>
-          <label>Name</label>
-          <br></br>
-          <input
-            type="text"
-            name="name"
-            value={inV.name}
-            onChange={handleSubmit}
-            autocorrect="off"
-            autocapitalize="none"
-            autoComplete="off"
-          ></input>
-          <br></br>
-          <label>Email</label>
-          <br></br>
-          <input
-            type="email"
-            name="email"
-            value={inV.email}
-            onChange={handleSubmit}
-            autocorrect="off"
-            autocapitalize="none"
-            autoComplete="off"
-          ></input>
-          <br></br>
-          <label>Phone</label>
-          <br></br>
-          <input
-            type="text"
-            name="phone"
-            value={inV.phone}
-            onChange={handleSubmit}
-            autocorrect="off"
-            autocapitalize="none"
-            autoComplete="off"
-          ></input>
-          <br></br>
-          <label>Message</label>
-          <br></br>
+          <div className="form_sec1">
+            <input
+              type="text"
+              name="name"
+              value={inV.name}
+              placeholder="Name"
+              onChange={handleChange}
+              autoComplete="off"
+            />
+            <input
+              type="email"
+              name="email"
+              value={inV.email}
+              placeholder="Email"
+              onChange={handleChange}
+              autoComplete="off"
+            />
+          </div>
+          <div className="form_sec2">
+            <input
+              type="text"
+              name="phone"
+              value={inV.phone}
+              placeholder="Phone Number"
+              onChange={handleChange}
+              autoComplete="off"
+            />
+            <input
+              type="text"
+              name="subject"
+              value={inV.subject}
+              placeholder="Subject"
+              onChange={handleChange}
+              autoComplete="off"
+            />
+          </div>
           <textarea
             type="text"
             name="message"
             value={inV.message}
-            onChange={handleSubmit}
-          ></textarea>
-          <br></br>
-          <button className="submit_now_contactBtn">Submit now</button>
+            placeholder="Type Your Message..."
+            onChange={handleChange}
+          />
+          <button className="cont_btn">submit now</button>
         </form>
-        <Map />
       </div>
-    </>
+      <div className="form_img">
+        <img src="self2.jpeg" alt="" />
+      </div>
+    </div>
   );
 };
 

@@ -1,9 +1,9 @@
 .about_wrapper {
   @include flex(column, center, center);
   width: 100%;
-  padding-bottom: 36em;
+  padding-bottom: 5em;
   @include media(P) {
-    padding-bottom: 92em;
+    padding-bottom: 5em;
   }
 }
 

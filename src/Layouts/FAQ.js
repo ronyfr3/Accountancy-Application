@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { BiUpArrow, BiRightArrow } from "react-icons/bi";
-import ImageBanner from "../Components/ImageBanner";
-
 const FAQ = () => {
   const [click, setClick] = useState(false);
   const toggle = (i) => {
@@ -38,40 +36,35 @@ const FAQ = () => {
     },
   ];
   return (
-    <>
-      <ImageBanner name="FAQ" />
-      <div className="accordian">
-        <h1 className="accordian_frequently_h1">Frequently Asked Questions</h1>
-        <div className="accordian_info">
-          {data.map((x, i) => {
-            const { answer, question } = x;
-            return (
-              <div
-                key={i}
-                onClick={() => toggle(i)}
-                className="accordian_content"
-              >
-                <div className="question_icon">
-                  <h1 className="question">{question}</h1>
-                  {click === i ? (
-                    <span>
-                      <BiUpArrow className="arrow_faq" />
-                    </span>
-                  ) : (
-                    <span>
-                      <BiRightArrow className="arrow_faq" />
-                    </span>
-                  )}
-                </div>
-                <p className={`answer ${click === i ? "show" : ""}`}>
-                  {answer}
-                </p>
+    <div className="accordian">
+      <h1 className="accordian_frequently_h1">Frequently Asked Questions</h1>
+      <div className="accordian_info">
+        {data.map((x, i) => {
+          const { answer, question } = x;
+          return (
+            <div
+              key={i}
+              onClick={() => toggle(i)}
+              className="accordian_content"
+            >
+              <div className="question_icon">
+                <h1 className="question">{question}</h1>
+                {click === i ? (
+                  <span>
+                    <BiUpArrow className="arrow_faq" />
+                  </span>
+                ) : (
+                  <span>
+                    <BiRightArrow className="arrow_faq" />
+                  </span>
+                )}
               </div>
-            );
-          })}
-        </div>
+              <p className={`answer ${click === i ? "show" : ""}`}>{answer}</p>
+            </div>
+          );
+        })}
       </div>
-    </>
+    </div>
   );
 };
 

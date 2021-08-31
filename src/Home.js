@@ -1,21 +1,6 @@
-import React, { useState } from "react";
-
+import React from "react";
+import Map from "./Layouts/contact/Map";
 const Home = () => {
-  const [inV, setInV] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  });
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setInV({
-      ...inV,
-      [name]: value,
-    });
-  };
-
   return (
     <div className="home_section">
       <div className="home_content">
@@ -70,65 +55,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        {/* CONTACT US FORM */}
-        <div className="contact_form">
-          <div className="contact_form_content">
-            <p className="contact_use_to_book">
-              Contact Us To Book Your Initial Consultation
-            </p>
-            <form>
-              <div className="form_sec1">
-                <input
-                  type="text"
-                  name="name"
-                  value={inV.name}
-                  placeholder="Name"
-                  onChange={handleChange}
-                  autoComplete="off"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  value={inV.email}
-                  placeholder="Email"
-                  onChange={handleChange}
-                  autoComplete="off"
-                />
-              </div>
-              <div className="form_sec2">
-                <input
-                  type="text"
-                  name="phone"
-                  value={inV.phone}
-                  placeholder="Phone Number"
-                  onChange={handleChange}
-                  autoComplete="off"
-                />
-                <input
-                  type="text"
-                  name="subject"
-                  value={inV.subject}
-                  placeholder="Subject"
-                  onChange={handleChange}
-                  autoComplete="off"
-                />
-              </div>
-              <textarea
-                type="text"
-                name="message"
-                value={inV.message}
-                placeholder="Type Your Message..."
-                onChange={handleChange}
-              />
-              <button className="cont_btn">submit now</button>
-            </form>
-          </div>
-          <div className="form_img">
-            <img src="self2.jpeg" alt="" />
-          </div>
-        </div>
       </div>
+      <Map />
     </div>
   );
 };

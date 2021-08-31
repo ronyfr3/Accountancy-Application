@@ -1,12 +1,12 @@
 .accordian {
   @include flex(column, flex-start, center);
-  padding-bottom: 42em;
+  padding-bottom: 7em;
   width: 100%;
-  margin: 3em 0 0 8em;
+  margin: 6em 0 0 8em;
   @include media(P) {
     @include flex(column, center, center);
     margin: 3em 0 0 0;
-    padding-bottom: 95em;
+    padding-bottom: 5em;
   }
 
   .accordian_info {

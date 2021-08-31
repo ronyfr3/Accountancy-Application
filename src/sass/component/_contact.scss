@@ -1,10 +1,6 @@
 .contactPage {
-  padding-bottom: 37.5em;
   @include flex(column, center, center);
   margin-top: 2em;
-  @include media(P) {
-    padding-bottom: 89.5em;
-  }
   .feelfree_h1 {
     &::after {
       content: "";
