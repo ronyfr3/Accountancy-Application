@@ -1,4 +1,5 @@
 import React from "react";
+import image from "../../images/self2.jpeg";
 import {
   FaLanguage,
   FaCrosshairs,
@@ -35,7 +36,7 @@ const About = () => {
           </article>
         </div>
         <div className="whoweare_img_container">
-          <img src="self2.jpeg" alt="" />
+          <img src={image} alt="" />
         </div>
       </div>
       {/* AWARDS */}

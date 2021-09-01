@@ -1,7 +1,7 @@
 import React from "react";
 import Map from "./Layouts/contact/Map";
 import ServiceSection from "./Components/ServiceSection";
-
+import image1 from "./images/self1.jpeg";
 const Home = () => {
   return (
     <div className="home_section">
@@ -23,7 +23,7 @@ const Home = () => {
             <button className="readmore">Read More</button>
           </div>
           <div className="Home_image_sec">
-            <img src="self1.jpeg" alt="" />
+            <img src={image1} alt="" />
           </div>
         </div>
         {/* SERVICE SECTION */}

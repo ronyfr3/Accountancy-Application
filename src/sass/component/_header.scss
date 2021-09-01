@@ -57,18 +57,16 @@
         }
         .phnNum {
           margin-left: 15px;
+          @include flex(row, center, center);
           .phone {
             color: #02a83d;
-            transform: translateY(2px);
+            margin-right: 0.2rem;
           }
           small {
             font-size: 14px;
             color: #02a83d;
             font-weight: 400;
             // @include font-size($p-font-sizes);
-          }
-          @include media-480 {
-            display: none;
           }
         }
         button {
@@ -160,7 +158,7 @@
     .hideLinks {
       z-index: 1000;
       position: absolute;
-      top: 143px;
+      top: 140px;
       left: 0;
       width: 100%;
       background-color: white;

@@ -151,24 +151,30 @@ body {
 
 .header_section nav ul li .phnNum {
   margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header_section nav ul li .phnNum .phone {
   color: #02a83d;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  margin-right: 0.2rem;
 }
 
 .header_section nav ul li .phnNum small {
   font-size: 14px;
   color: #02a83d;
   font-weight: 400;
-}
-
-@media (max-width: 480px) {
-  .header_section nav ul li .phnNum {
-    display: none;
-  }
 }
 
 .header_section nav ul li button {
@@ -316,7 +322,7 @@ body {
 .header_section header .hideLinks {
   z-index: 1000;
   position: absolute;
-  top: 143px;
+  top: 140px;
   left: 0;
   width: 100%;
   background-color: white;
