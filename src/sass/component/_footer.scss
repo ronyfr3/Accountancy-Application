@@ -22,7 +22,7 @@
     border-bottom: 2px solid green;
     color: #a3a4ac;
     margin-bottom: 0.5em;
-    @include font-size($h1-font-sizes);
+    @include font-size($h2-font-sizes);
   }
   .footer_about_p {
     color: white;
@@ -44,7 +44,7 @@
     border-bottom: 2px solid green;
     color: #a3a4ac;
     margin-bottom: 0.5em;
-    @include font-size($h1-font-sizes);
+    @include font-size($h2-font-sizes);
   }
   ul li a {
     color: white;
@@ -60,7 +60,7 @@
     border-bottom: 2px solid green;
     color: #a3a4ac;
     margin-bottom: 0.5em;
-    @include font-size($h1-font-sizes);
+    @include font-size($h2-font-sizes);
   }
   .footer_contact_p {
     width: 100%;
@@ -93,7 +93,7 @@
   @include flex(row, center, center);
   width: 100%;
   padding: 10px 0;
-  background-color: #024d86;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   .powerdby {
     color: white;
     @include font-size($p-font-sizes);

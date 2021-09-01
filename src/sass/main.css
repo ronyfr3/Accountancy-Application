@@ -1949,50 +1949,43 @@ body {
 
 @media screen and (min-width: 320px) {
   .footer_about .footer_aboutUs {
-    font-size: 20px;
-    line-height: 1.3;
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width: 375px) {
   .footer_about .footer_aboutUs {
-    font-size: 22.5px;
-    line-height: 1.3;
+    font-size: 17px;
   }
 }
 
 @media screen and (min-width: 425px) {
   .footer_about .footer_aboutUs {
-    font-size: 24px;
-    line-height: 1.3;
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer_about .footer_aboutUs {
-    font-size: 26px;
-    line-height: 1.5;
+    font-size: 22px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .footer_about .footer_aboutUs {
-    font-size: 30px;
-    line-height: 1.5;
+    font-size: 26px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .footer_about .footer_aboutUs {
-    font-size: 36px;
-    line-height: 1.5;
+    font-size: 30px;
   }
 }
 
 @media screen and (min-width: 2560px) {
   .footer_about .footer_aboutUs {
-    font-size: 70px;
-    line-height: 1.5;
+    font-size: 35px;
   }
 }
 
@@ -2133,56 +2126,49 @@ body {
 @media screen and (min-width: 320px) {
   .footer_links .footer_link_h1,
   .footer_services .footer_link_h1 {
-    font-size: 20px;
-    line-height: 1.3;
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width: 375px) {
   .footer_links .footer_link_h1,
   .footer_services .footer_link_h1 {
-    font-size: 22.5px;
-    line-height: 1.3;
+    font-size: 17px;
   }
 }
 
 @media screen and (min-width: 425px) {
   .footer_links .footer_link_h1,
   .footer_services .footer_link_h1 {
-    font-size: 24px;
-    line-height: 1.3;
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer_links .footer_link_h1,
   .footer_services .footer_link_h1 {
-    font-size: 26px;
-    line-height: 1.5;
+    font-size: 22px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .footer_links .footer_link_h1,
   .footer_services .footer_link_h1 {
-    font-size: 30px;
-    line-height: 1.5;
+    font-size: 26px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .footer_links .footer_link_h1,
   .footer_services .footer_link_h1 {
-    font-size: 36px;
-    line-height: 1.5;
+    font-size: 30px;
   }
 }
 
 @media screen and (min-width: 2560px) {
   .footer_links .footer_link_h1,
   .footer_services .footer_link_h1 {
-    font-size: 70px;
-    line-height: 1.5;
+    font-size: 35px;
   }
 }
 
@@ -2274,50 +2260,43 @@ body {
 
 @media screen and (min-width: 320px) {
   .footer_contact .getInTouch {
-    font-size: 20px;
-    line-height: 1.3;
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width: 375px) {
   .footer_contact .getInTouch {
-    font-size: 22.5px;
-    line-height: 1.3;
+    font-size: 17px;
   }
 }
 
 @media screen and (min-width: 425px) {
   .footer_contact .getInTouch {
-    font-size: 24px;
-    line-height: 1.3;
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer_contact .getInTouch {
-    font-size: 26px;
-    line-height: 1.5;
+    font-size: 22px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .footer_contact .getInTouch {
-    font-size: 30px;
-    line-height: 1.5;
+    font-size: 26px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .footer_contact .getInTouch {
-    font-size: 36px;
-    line-height: 1.5;
+    font-size: 30px;
   }
 }
 
 @media screen and (min-width: 2560px) {
   .footer_contact .getInTouch {
-    font-size: 70px;
-    line-height: 1.5;
+    font-size: 35px;
   }
 }
 
@@ -2427,7 +2406,8 @@ body {
           justify-content: center;
   width: 100%;
   padding: 10px 0;
-  background-color: #024d86;
+  background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(black));
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 
 .bottom_Section_footer .powerdby {
@@ -2694,7 +2674,12 @@ body {
           justify-content: center;
   width: 100%;
   height: 300px;
-  background-color: #e9e7e7;
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+}
+
+.accreditations_h1 {
+  font-weight: 400;
+  color: white;
 }
 
 @media screen and (min-width: 320px) {
@@ -2759,8 +2744,10 @@ body {
 .acc_image {
   width: 100%;
   height: 120px;
-  -webkit-transform: scale(94%);
-          transform: scale(94%);
+  -webkit-transform: scale(95%);
+          transform: scale(95%);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .service {

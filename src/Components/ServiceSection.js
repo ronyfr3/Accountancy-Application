@@ -22,7 +22,7 @@ const ServiceSection = () => {
     {
       image: as,
       title: "Self-Assesmemnt ",
-      des: "Personal tax services are available both for business owners and private individuals including…",
+      des: "Personal tax services are available both for business owners and private individuals including",
       arr: [
         "All aspects of Self Assessment",
         "Dealing with Tax Returns",
@@ -34,7 +34,7 @@ const ServiceSection = () => {
     {
       image: work,
       title: "Company Accounts  ",
-      des: "Preparing the annual accounts for Limited Companies, Partnerships, Sole Traders, Charities are core areas of our practice. However, these are also statutory requirements by Company House and HM Revenue and Customs",
+      des: "Preparing the annual accounts for Limited Companies, Partnerships, Sole Traders Customs",
       arr: [
         "All aspects of Self Assessment",
         "Dealing with Tax Returns",
@@ -46,7 +46,7 @@ const ServiceSection = () => {
     {
       image: tax,
       title: "Construction Indusry Scheme CIS & IR35",
-      des: "Construction Industry Scheme (CIS) has an extensive impact on contractors and subcontractors. There are significant penalties for failure to operate the CIS correctly which can result in serious consequences for businesses",
+      des: "Preparing the annual accounts for Limited Companies, Partnerships, Sole Traders Customs",
       arr: [
         "Registration to CIS as a Subcontractor",
         "Registration to CIS as a Contractor",
@@ -58,7 +58,7 @@ const ServiceSection = () => {
     {
       image: pay,
       title: "Payroll ",
-      des: "Employees are always helping hands and essential parts for any business to grow further. We ensure our clients that every requirement are in place and feel confidence in the business.",
+      des: "Preparing the annual accounts for Limited Companies, Partnerships, Sole Traders Customs",
       arr: ["Employee payslips", "Monthly summaries", "Departmental reports"],
       arrTitle:
         "We run payrolls on time and can provide a tailor made service for your business including…",
@@ -66,7 +66,7 @@ const ServiceSection = () => {
     {
       image: pen,
       title: "Pension",
-      des: "We consider numerous circumstances of the business while preparing any VAT or dealing with any VAT investigation. Our team of qualified members ensure that all our effort drives the highest benefits for our clients.      ",
+      des: "Preparing the annual accounts for Limited Companies, Partnerships, Sole Traders Customs",
       arr: [
         "All aspects of Self Assessment",
         "Dealing with Tax Returns",
@@ -78,7 +78,7 @@ const ServiceSection = () => {
     {
       image: vat,
       title: "Value Added Tax (VAT)",
-      des: "It is mandatory requirements to register every business for VAT purposes of which turnover either expected or exceeded £77,000 per annum.At Maxwell, we assist and advice our clients whether to register for VAT and ensure that the chosen options of the VAT scheme serves the highest benefits for our clients",
+      des: "Preparing the annual accounts for Limited Companies, Partnerships, Sole Traders Customs",
       arr: [
         "All aspects of Self Assessment",
         "Dealing with Tax Returns",
@@ -90,7 +90,7 @@ const ServiceSection = () => {
     {
       image: pay,
       title: "Bookkeeping & Secretarial Services",
-      des: "Forming a Limited company is the first step to move forward. We not only assist to register the company, we also advice on pros and cons of registering Limited Company for our clients.",
+      des: "Preparing the annual accounts for Limited Companies, Partnerships, Sole Traders Customs",
       arrTitle: "Our Company formation packages can include:",
       arr: [
         "Appointment of directors",

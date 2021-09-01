@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ImPhone } from "react-icons/im";
+import image from "../../images/prio.jpg";
 import {
   AiFillTwitterCircle,
   AiOutlineMenu,
@@ -33,7 +34,7 @@ const Header = () => {
       </nav>
       <header>
         <div className="header_image">
-          <img src="prio.jpg" alt="" />
+          <img src={image} alt="" />
         </div>
 
         <div className={show ? "hideLinks" : "second_header"}>

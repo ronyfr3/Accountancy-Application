@@ -80,7 +80,7 @@ const Footer = () => {
         {/* bottom section */}
         <div className="bottom_Section_footer">
           <p className="powerdby">
-            © 2021 Priority Accountancy. Powered By{" "}
+            © {new Date().getFullYear()} Priority Accountancy. Powered By{" "}
             <span className="eazmltd">EAZM LIMITED</span>.
           </p>
         </div>

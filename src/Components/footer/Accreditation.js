@@ -1,20 +1,24 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import img1 from "../../images/xero.png";
+import img2 from "../../images/acca.jpg";
+import img3 from "../../images/books.png";
+import img4 from "../../images/ico.jpg";
 
 const Accreditation = () => {
   const images = [
     {
-      image: "xero.png",
+      image: img1,
     },
     {
-      image: "ico.jpg",
+      image: img2,
     },
     {
-      image: "acca.jpg",
+      image: img3,
     },
     {
-      image: "books.png",
+      image: img4,
     },
   ];
   const responsive = {

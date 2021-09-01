@@ -2,6 +2,10 @@ import React from "react";
 import Map from "./Layouts/contact/Map";
 import ServiceSection from "./Components/ServiceSection";
 import image1 from "./images/self1.jpeg";
+import loc1 from "./images/loc1.jpg";
+import loc2 from "./images/loc2.jpg";
+
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const Home = () => {
   return (
     <div className="home_section">
@@ -23,7 +27,7 @@ const Home = () => {
             <button className="readmore">Read More</button>
           </div>
           <div className="Home_image_sec">
-            <img src={image1} alt="" />
+            <LazyLoadImage src={image1} alt="" />
           </div>
         </div>
         {/* SERVICE SECTION */}
@@ -34,7 +38,7 @@ const Home = () => {
           <h1 className="come_visit">come and visit us</h1>
           <div className="loc_image">
             <div className="loc_img_text">
-              <img src="loc1.jpg" alt="" />
+              <LazyLoadImage src={loc1} alt="" />
               <div className="loc_text">
                 <h1 className="com_name">London Office</h1>
                 <address className="com_address">
@@ -46,7 +50,7 @@ const Home = () => {
               </div>
             </div>
             <div className="loc_img_text">
-              <img src="loc2.jpg" alt="" />
+              <LazyLoadImage src={loc2} alt="" />
               <div className="loc_text">
                 <h1 className="com_name">Luton Office</h1>
                 <address className="com_address">
