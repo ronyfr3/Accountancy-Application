@@ -79,6 +79,8 @@
       width: 100%;
       margin-top: 3em;
       .our_location {
+        width: 100%;
+        text-align: center;
         color: #00a63d;
         @include font-size($h2-font-sizes);
         font-weight: 500;

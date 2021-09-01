@@ -1381,6 +1381,8 @@ body {
 }
 
 .home_section .home_content .location_section .our_location {
+  width: 100%;
+  text-align: center;
   color: #00a63d;
   font-weight: 500;
   text-transform: capitalize;
