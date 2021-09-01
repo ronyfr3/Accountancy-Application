@@ -1890,12 +1890,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 20px 0 20px;
+  padding: 20px 20px 0 20px;
 }
 
 @media (max-width: 599px) {
@@ -2331,12 +2331,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 320px) {
@@ -2389,24 +2390,25 @@ body {
 }
 
 .footer_contact .footer_phn_logo {
-  margin-right: 5px;
-  font-size: 20px;
+  font-size: 21px;
   color: white;
+  margin-right: 0.25rem;
 }
 
 .footer_contact .footer_clock_logo {
-  margin-right: 5px;
   font-size: 16px;
+  margin-right: 0.3rem;
+  margin-top: 0.25rem;
 }
 
 .footer_contact .footer_location_logo {
-  margin-right: 5px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .footer_contact .footer_gmail_logo {
-  margin-right: 5px;
   font-size: 16px;
+  margin-top: 0.26rem;
+  margin-right: 0.3rem;
 }
 
 .bottom_Section_footer {

@@ -4,8 +4,8 @@
   background-color: #2e3143;
 }
 .footer_content {
-  @include flex(row, center, space-around);
-  padding: 0 20px 0 20px;
+  @include flex(row, flex-start, space-around);
+  padding: 20px 20px 0 20px;
   @include media(P) {
     @include flex(column, center, center);
   }
@@ -66,24 +66,26 @@
     width: 100%;
     color: white;
     @include font-size($p-font-sizes);
-    @include flex(row, center, flex-start);
+    @include flex(row, flex-start, flex-start);
+    margin-bottom: 0.5rem;
   }
   .footer_phn_logo {
-    margin-right: 5px;
-    font-size: 20px;
+    font-size: 21px;
     color: white;
+    margin-right: 0.25rem;
   }
   .footer_clock_logo {
-    margin-right: 5px;
     font-size: 16px;
+    margin-right: 0.3rem;
+    margin-top: 0.25rem;
   }
   .footer_location_logo {
-    margin-right: 5px;
-    font-size: 20px;
+    font-size: 24px;
   }
   .footer_gmail_logo {
-    margin-right: 5px;
     font-size: 16px;
+    margin-top: 0.26rem;
+    margin-right: 0.3rem;
   }
 }
 
