@@ -15,8 +15,8 @@ const About = () => {
       {/* WHO WE ARE */}
       <div className="whoweare">
         <div className="whoweare_content">
-          <p>Who We Are</p>
-          <h1>Professional accountants delivering excellent service</h1>
+          <h1>Who We Are</h1>
+          <h2>Professional accountants delivering excellent service</h2>
           <article>
             Oasis Accountants are a team of Professional Accountants delivering
             excellent service understanding clients business financial goals.
@@ -56,7 +56,6 @@ const About = () => {
       </div>
       {/* WHATS MAKES US DIFFERENT */}
       <div className="makesusdif">
-        <p>What Makes Us Different?</p>
         <h1>Why choose Priority?</h1>
         <article>
           At Oasis Accountants we offer expert advice with broad range of

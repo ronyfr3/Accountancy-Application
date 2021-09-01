@@ -1,5 +1,7 @@
 import React from "react";
 import Map from "./Layouts/contact/Map";
+import ServiceSection from "./Components/ServiceSection";
+
 const Home = () => {
   return (
     <div className="home_section">
@@ -24,6 +26,8 @@ const Home = () => {
             <img src="self1.jpeg" alt="" />
           </div>
         </div>
+        {/* SERVICE SECTION */}
+        <ServiceSection />
         {/* LOCATIONS */}
         <div className="location_section">
           <p className="our_location">our locations</p>

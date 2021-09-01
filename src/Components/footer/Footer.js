@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BsFillClockFill } from "react-icons/bs";
-import { ImPhone } from "react-icons/im";
+// import { ImPhone } from "react-icons/im";
 import { HiLocationMarker } from "react-icons/hi";
 import { SiGmail } from "react-icons/si";
 import Accreditation from "./Accreditation";
@@ -63,7 +63,7 @@ const Footer = () => {
                 16 Lyndhurst Road, Luton, England, LU1 1LN{" "}
               </p>
               <p className="footer_contact_p">
-                <ImPhone className="footer_phn_logo" />
+                <span className="footer_phn_logo">&#9990;</span>
                 Tel: 02033558839; 01582432053; Mob: 07446861439
               </p>
               <p className="footer_contact_p">
@@ -80,7 +80,7 @@ const Footer = () => {
         {/* bottom section */}
         <div className="bottom_Section_footer">
           <p className="powerdby">
-            © 2021 Oasisaccountants . Powered By{" "}
+            © 2021 Priority Accountancy. Powered By{" "}
             <span className="eazmltd">EAZM LIMITED</span>.
           </p>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Contact = () => {
   const [inV, setInv] = useState({
@@ -85,7 +86,7 @@ const Contact = () => {
         </form>
       </div>
       <div className="form_img">
-        <img src="self2.jpeg" alt="" />
+        <LazyLoadImage src="self2.jpeg" alt="" />
       </div>
     </div>
   );

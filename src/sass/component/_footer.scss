@@ -71,6 +71,7 @@
   .footer_phn_logo {
     margin-right: 5px;
     font-size: 20px;
+    color: white;
   }
   .footer_clock_logo {
     margin-right: 5px;
@@ -96,7 +97,8 @@
     @include font-size($p-font-sizes);
     .eazmltd {
       color: rgb(105, 248, 105);
-      @include font-size($p-font-sizes);
+      font-size: 15px;
+      font-weight: 400;
     }
   }
 }

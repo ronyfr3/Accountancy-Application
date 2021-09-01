@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Accreditation = () => {
   const images = [
@@ -19,17 +20,17 @@ const Accreditation = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3, // optional, default to 1.
+      items: 4,
+      slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2, // optional, default to 1.
+      items: 3,
+      slidesToSlide: 1, // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
+      items: 2,
       slidesToSlide: 1, // optional, default to 1.
     },
   };
@@ -39,7 +40,7 @@ const Accreditation = () => {
       <Carousel
         className="carousel"
         centerMode={true}
-        swipeable={false}
+        swipeable={true}
         draggable={true}
         showDots={false}
         responsive={responsive}
@@ -48,7 +49,7 @@ const Accreditation = () => {
         autoPlay={true} //autoPlay={this.props.deviceType !== "mobile" ? true : false}
         autoPlaySpeed={5000}
         keyBoardControl={false}
-        customTransition="all .4"
+        customTransition="all 2s ease"
         itemClass="item_class"
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
@@ -59,7 +60,7 @@ const Accreditation = () => {
           const { image } = x;
           return (
             <div className="image_accreditation">
-              <img src={image} alt="" className="acc_image" />
+              <LazyLoadImage src={image} alt="" className="acc_image" />
             </div>
           );
         })}

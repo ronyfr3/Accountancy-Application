@@ -6,7 +6,7 @@ import {
   AiOutlineMenu,
   AiFillLinkedin,
 } from "react-icons/ai";
-import { IoLogoWhatsapp } from "react-icons/io";
+// import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook, FaHome } from "react-icons/fa";
 import { GrClose } from "react-icons/gr";
 
@@ -27,7 +27,7 @@ const Header = () => {
             <FaFacebook className="header_social_icon1" />
             <AiFillTwitterCircle className="header_social_icon2" />
             <AiFillLinkedin className="header_social_icon3" />
-            <IoLogoWhatsapp className="header_social_icon4" />
+            {/* <IoLogoWhatsapp className="header_social_icon4" /> */}
           </div>
         </ul>
       </nav>

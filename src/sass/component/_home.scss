@@ -80,7 +80,7 @@
       margin-top: 3em;
       .our_location {
         color: #00a63d;
-        @include font-size($p-font-sizes);
+        @include font-size($h2-font-sizes);
         font-weight: 500;
         text-transform: capitalize;
       }

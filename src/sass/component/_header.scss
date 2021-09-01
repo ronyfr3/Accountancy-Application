@@ -1,13 +1,14 @@
 .header_section {
   @include flex(column, center, center);
-  box-shadow: $shadow8;
+  box-shadow: $shadow1;
   nav {
     width: 100%;
-    border-bottom: 1px solid lightgrey;
+    background-color: #000428;
     ul {
-      @include flex(row, center, center);
+      @include flex(row, center, space-between);
       .icons_header {
         @include flex(row, center, center);
+        margin-right: 10px;
         width: 120px;
         .header_social_icon1,
         .header_social_icon2,
@@ -16,7 +17,7 @@
           color: #646b7a;
           cursor: pointer;
           margin: 4px;
-          font-size: 20px;
+          font-size: 19px;
           @include media-480 {
             font-size: 17px;
           }
@@ -55,14 +56,16 @@
           }
         }
         .phnNum {
-          margin-left: 10px;
-          margin-right: 10px;
+          margin-left: 15px;
           .phone {
             color: #02a83d;
             transform: translateY(2px);
           }
           small {
             font-size: 14px;
+            color: #02a83d;
+            font-weight: 400;
+            // @include font-size($p-font-sizes);
           }
           @include media-480 {
             display: none;
@@ -82,9 +85,22 @@
   }
   header {
     @include flex(row, center, space-between);
-    margin-top: 1em;
-    margin-bottom: 1em;
-    width: 100%;
+    // margin-top: 1em;
+    // margin-bottom: 1em;
+    padding: 1.5rem 0 1.5rem 0;
+    width: 100%; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #2980b9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #2c3e50,
+      #2980b9
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #2c3e50,
+      #2980b9
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     .hambergur {
       display: none;
       @include media(P) {
@@ -93,7 +109,7 @@
       }
 
       .hmenu {
-        font-size: 33px;
+        font-size: 30px;
         cursor: pointer;
         color: #18ba60;
         @include media-480 {
@@ -109,9 +125,8 @@
       }
       img {
         width: 100%;
-        height: 70px;
-        margin-left: 1em;
-
+        height: 50px;
+        margin-left: 0.5em;
         transform: scale(1.3);
         @include media-480 {
           width: 50px;
@@ -160,7 +175,6 @@
           a {
             font-size: 15px;
             margin-left: 20px;
-            color: rgb(56, 56, 56);
             font-weight: 500;
             text-transform: uppercase;
             .home_icon {
@@ -188,17 +202,17 @@
           @include flex(row, center, center);
           padding: 0 5px 0 5px;
           a {
-            color: black;
+            color: white;
             text-transform: uppercase;
             font-size: 14.5px;
             font-weight: 500;
+            &:hover {
+              text-shadow: $ts1;
+            }
             .home_icon {
-              font-size: 20px;
+              font-size: 25px;
               margin-right: 5px;
               color: #02a83d;
-            }
-            &:hover {
-              color: #0077b5;
             }
           }
         }

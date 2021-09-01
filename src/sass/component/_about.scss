@@ -2,6 +2,7 @@
   @include flex(column, center, center);
   width: 100%;
   padding-bottom: 5em;
+  text-transform: capitalize;
   @include media(P) {
     padding-bottom: 5em;
   }
@@ -19,14 +20,14 @@
     @include media(P) {
       width: 90%;
     }
-    p {
+    h1 {
       color: #00a37b;
       font-weight: 600;
-      @include font-size($p-font-sizes);
+      margin-bottom: 0.2rem;
+      @include font-size($h2-font-sizes);
     }
-    h1 {
-      line-height: 1.2em;
-      @include font-size($h1-font-sizes);
+    h2 {
+      @include font-size($h2-font-sizes);
     }
     article {
       color: #666666;
@@ -52,8 +53,8 @@
   @include flex(column, flex-start, flex-start);
   width: 90%;
   h1 {
-    line-height: 1.2em;
-    font-weight: 500;
+    color: #00a37b;
+    font-weight: 600;
     @include font-size($h1-font-sizes);
   }
   article {
@@ -76,12 +77,10 @@
     margin-top: 1em;
     @include font-size($p-font-sizes);
   }
-  p {
-    color: #00a37b;
-    @include font-size($p-font-sizes);
-  }
+
   h1 {
-    line-height: 1.2em;
+    color: #00a37b;
+    font-weight: 600;
     @include font-size($h1-font-sizes);
   }
   .icons_h5 {
