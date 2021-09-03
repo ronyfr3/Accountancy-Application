@@ -135,12 +135,7 @@ const ServiceSection = () => {
         {/* leftarrow */}
         <BsArrowRight className="bsarrowright" onClick={prevSlide} />
       </div>
-      <div className="clickybtn">
-        <div className="handup">
-          <AiOutlineLine className="aioutline" /> Explore
-        </div>
-        <FaHandPointUp className="fahandup" onClick={goToServicePage} />
-      </div>
+      <button onClick={goToServicePage}>Check Our Services</button>
     </div>
   );
 };
