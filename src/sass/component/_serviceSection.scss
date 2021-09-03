@@ -21,7 +21,7 @@
   .bsarrowright {
     font-size: 40px;
     cursor: pointer;
-    color: #007767;
+    color: #fafcfc;
     z-index: 700;
     @include media(P) {
       font-size: 33px;
@@ -52,7 +52,7 @@
     width: 95%;
     height: 350px;
     @include media(P) {
-      height: 240px;
+      height: 100%;
     }
     .serviceSec_info {
       @include flex(row, flex-start, space-between);
@@ -60,22 +60,35 @@
       width: 100%;
       height: 100%;
       margin-bottom: 10px;
-      // box-shadow: $shadow1;
+      box-shadow: $shadow1;
       border-left: 3px solid #ffeeee;
+      @include media(P) {
+        @include flex(column, flex-start, flex-start);
+      }
       img {
-        width: 50%;
+        width: 49%;
         height: 99%;
         object-fit: cover;
         overflow: hidden;
         user-select: none;
+        @include media(P) {
+          width: 100%;
+          height: 200px;
+        }
       }
       .service_title_des {
-        @include flex(column, flex-start, center);
-        background-color: #007767;
-        clip-path: ellipse(156% 100% at -23.14% 0%);
-        width: 50%;
+        @include flex(column, flex-start, flex-start);
+        background-color: #2c465d;
+        // clip-path: ellipse(156% 100% at -23.14% 0%);
+        width: 49%;
         height: 100%;
-        padding-left: 15px;
+        padding-left: 20px;
+        padding-top: 10px;
+        @include media(P) {
+          width: 100%;
+          height: 120px;
+          padding: 15px;
+        }
         .service_title_des_title {
           @include font-size($h1-font-sizes);
           color: white;
