@@ -5,7 +5,7 @@
 }
 .footer_content {
   @include flex(row, flex-start, space-around);
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 25px 20px;
   @include media(P) {
     @include flex(column, center, center);
   }
@@ -92,15 +92,39 @@
 .bottom_Section_footer {
   @include flex(row, center, center);
   width: 100%;
-  padding: 10px 0;
+  position: relative;
+  height: 40px;
+  padding: 8px 0;
   background-image: linear-gradient(to right, #434343 0%, black 100%);
   .powerdby {
     color: white;
     @include font-size($p-font-sizes);
     .eazmltd {
       color: rgb(105, 248, 105);
-      font-size: 15px;
+      @include font-size($p-font-sizes);
       font-weight: 400;
     }
+  }
+  .hiddenname {
+    width: 20px;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.icons_footer {
+  .footer_social_icon1,
+  .footer_social_icon2,
+  .footer_social_icon3 {
+    color: white;
+    margin: 5px 7px 0 0;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .footer_social_icon1 {
+    font-size: 22px;
   }
 }

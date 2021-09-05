@@ -76,6 +76,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .header_section nav ul .icons_header {
@@ -92,18 +93,18 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 10px;
   width: 120px;
+  margin-right: 5px;
 }
 
 .header_section nav ul .icons_header .header_social_icon1,
 .header_section nav ul .icons_header .header_social_icon2,
 .header_section nav ul .icons_header .header_social_icon3,
 .header_section nav ul .icons_header .header_social_icon4 {
-  color: #646b7a;
+  color: white;
   cursor: pointer;
   margin: 4px;
-  font-size: 19px;
+  font-size: 23px;
 }
 
 @media (max-width: 480px) {
@@ -111,7 +112,7 @@ body {
   .header_section nav ul .icons_header .header_social_icon2,
   .header_section nav ul .icons_header .header_social_icon3,
   .header_section nav ul .icons_header .header_social_icon4 {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
@@ -119,20 +120,46 @@ body {
   color: #4267b2;
 }
 
+.header_section nav ul .icons_header .header_social_icon2 {
+  font-size: 25px;
+}
+
 .header_section nav ul .icons_header .header_social_icon2:hover {
   color: #1da1f2;
+}
+
+.header_section nav ul .icons_header .header_social_icon3 {
+  font-size: 25px;
 }
 
 .header_section nav ul .icons_header .header_social_icon3:hover {
   color: #0077b5;
 }
 
+.header_section nav ul .icons_header .header_social_icon4 {
+  font-size: 23.5px;
+  padding-top: 0.24rem;
+}
+
 .header_section nav ul .icons_header .header_social_icon4:hover {
-  color: #075e54;
+  color: #08f764;
 }
 
 .header_section nav ul li {
-  padding: 10px 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0 10px 10px;
 }
 
 .header_section nav ul li a {
@@ -149,8 +176,14 @@ body {
   }
 }
 
+.header_section nav ul li .phonelogo {
+  font-size: 22px;
+  color: white;
+  margin-right: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
 .header_section nav ul li .phnNum {
-  margin-left: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,15 +199,60 @@ body {
           justify-content: center;
 }
 
-.header_section nav ul li .phnNum .phone {
-  color: #02a83d;
-  margin-right: 0.2rem;
+.header_section nav ul li .phnNum p {
+  margin-right: 0.8rem;
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
 }
 
-.header_section nav ul li .phnNum small {
-  font-size: 14px;
-  color: #02a83d;
-  font-weight: 400;
+@media screen and (min-width: 320px) {
+  .header_section nav ul li .phnNum p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .header_section nav ul li .phnNum p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .header_section nav ul li .phnNum p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header_section nav ul li .phnNum p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header_section nav ul li .phnNum p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header_section nav ul li .phnNum p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .header_section nav ul li .phnNum p {
+    font-size: 38px;
+    line-height: 1.6;
+  }
 }
 
 .header_section nav ul li button {
@@ -228,7 +306,7 @@ body {
 .header_section header .hambergur .hmenu {
   font-size: 30px;
   cursor: pointer;
-  color: #18ba60;
+  color: white;
 }
 
 @media (max-width: 480px) {
@@ -322,12 +400,34 @@ body {
 .header_section header .hideLinks {
   z-index: 1000;
   position: absolute;
-  top: 140px;
+  top: 150px;
   left: 0;
   width: 100%;
   background-color: white;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 10px;
           box-shadow: rgba(0, 0, 0, 0.2) 0 2px 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-animation: slidees 0.3s ease;
+          animation: slidees 0.3s ease;
+}
+
+@-webkit-keyframes slidees {
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slidees {
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 .header_section header .hideLinks ul {
@@ -358,15 +458,17 @@ body {
   margin-left: 20px;
   font-weight: 500;
   text-transform: uppercase;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .header_section header .hideLinks ul li a .home_icon {
   font-size: 20px;
-  color: #02a83d;
+  color: #05ff5c;
 }
 
 .header_section header .hideLinks ul li a:hover {
-  color: #0077b5;
+  color: #05ff5c;
 }
 
 @media (max-width: 599px) {
@@ -412,24 +514,26 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 5px 0 5px;
+  padding: 0 7px 0 7px;
 }
 
 .header_section header .second_header ul li a {
   color: white;
   text-transform: uppercase;
-  font-size: 14.5px;
+  font-size: 15px;
   font-weight: 500;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .header_section header .second_header ul li a:hover {
-  text-shadow: 0px 0px 0 #899cd5, 1px 1px 0 #8194cd, 2px 2px 0 #788bc4, 3px 3px 0 #6f82bb, 4px 4px 0 #677ab3, 5px 5px 0 #5e71aa, 6px 6px 0 #5568a1, 7px 7px 0 #4c5f98, 8px 8px 0 #445790, 9px 9px 0 #3b4e87, 10px 10px 0 #32457e, 11px 11px 0 #2a3d76, 12px 12px 0 #21346d, 13px 13px 0 #182b64, 14px 14px 0 #0f225b, 15px 15px 0 #071a53, 16px 16px 0 #00114a, 17px 17px 0 #000841, 18px 18px 0 #000039, 19px 19px 0 #000030, 20px 20px 0 #000027, 21px 21px 20px black, 21px 21px 1px rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.2);
+  color: #05ff5c;
 }
 
 .header_section header .second_header ul li a .home_icon {
   font-size: 25px;
   margin-right: 5px;
-  color: #02a83d;
+  color: #05ff5c;
 }
 
 .about_wrapper {
@@ -1895,7 +1999,7 @@ body {
           align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 25px 20px;
 }
 
 @media (max-width: 599px) {
@@ -2405,7 +2509,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  padding: 10px 0;
+  position: relative;
+  height: 40px;
+  padding: 8px 0;
   background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(black));
   background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
@@ -2465,8 +2571,78 @@ body {
 
 .bottom_Section_footer .powerdby .eazmltd {
   color: #69f869;
-  font-size: 15px;
   font-weight: 400;
+}
+
+@media screen and (min-width: 320px) {
+  .bottom_Section_footer .powerdby .eazmltd {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .bottom_Section_footer .powerdby .eazmltd {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .bottom_Section_footer .powerdby .eazmltd {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bottom_Section_footer .powerdby .eazmltd {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bottom_Section_footer .powerdby .eazmltd {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bottom_Section_footer .powerdby .eazmltd {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .bottom_Section_footer .powerdby .eazmltd {
+    font-size: 38px;
+    line-height: 1.6;
+  }
+}
+
+.bottom_Section_footer .hiddenname {
+  width: 20px;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icons_footer .footer_social_icon1,
+.icons_footer .footer_social_icon2,
+.icons_footer .footer_social_icon3 {
+  color: white;
+  margin: 5px 7px 0 0;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icons_footer .footer_social_icon1 {
+  font-size: 22px;
 }
 
 .accordian {

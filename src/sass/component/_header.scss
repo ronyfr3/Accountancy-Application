@@ -6,20 +6,21 @@
     background-color: #000428;
     ul {
       @include flex(row, center, space-between);
+      width: 100%;
       .icons_header {
         @include flex(row, center, center);
-        margin-right: 10px;
         width: 120px;
+        margin-right: 5px;
         .header_social_icon1,
         .header_social_icon2,
         .header_social_icon3,
         .header_social_icon4 {
-          color: #646b7a;
+          color: white;
           cursor: pointer;
           margin: 4px;
-          font-size: 19px;
+          font-size: 23px;
           @include media-480 {
-            font-size: 17px;
+            font-size: 18px;
           }
         }
         .header_social_icon1 {
@@ -28,23 +29,28 @@
           }
         }
         .header_social_icon2 {
+          font-size: 25px;
           &:hover {
             color: #1da1f2;
           }
         }
         .header_social_icon3 {
+          font-size: 25px;
           &:hover {
             color: #0077b5;
           }
         }
         .header_social_icon4 {
+          font-size: 23.5px;
+          padding-top: 0.24rem;
           &:hover {
-            color: #075e54;
+            color: #08f764;
           }
         }
       }
       li {
-        padding: 10px 0 10px 0;
+        @include flex(row, center, center);
+        padding: 10px 0 10px 10px;
         a {
           color: #0077b5;
           padding: 7px;
@@ -55,18 +61,20 @@
             text-transform: uppercase;
           }
         }
+        .phonelogo {
+          font-size: 22px;
+          color: white;
+          margin-right: 0.2rem;
+          margin-bottom: 0.2rem;
+        }
         .phnNum {
-          margin-left: 15px;
           @include flex(row, center, center);
-          .phone {
-            color: #02a83d;
-            margin-right: 0.2rem;
-          }
-          small {
+          p {
+            margin-right: 0.8rem;
             font-size: 14px;
-            color: #02a83d;
+            color: white;
             font-weight: 400;
-            // @include font-size($p-font-sizes);
+            @include font-size($p-font-sizes);
           }
         }
         button {
@@ -101,6 +109,7 @@
 
     .hambergur {
       display: none;
+
       @include media(P) {
         margin-right: 1.2em;
         display: flex;
@@ -109,7 +118,7 @@
       .hmenu {
         font-size: 30px;
         cursor: pointer;
-        color: #18ba60;
+        color: white;
         @include media-480 {
           font-size: 26px;
         }
@@ -158,11 +167,21 @@
     .hideLinks {
       z-index: 1000;
       position: absolute;
-      top: 140px;
+      top: 150px;
       left: 0;
       width: 100%;
       background-color: white;
       box-shadow: rgba(0, 0, 0, 0.2) 0 2px 10px;
+      transition: all 0.3s ease;
+      animation: slidees 0.3s ease;
+      @keyframes slidees {
+        0% {
+          left: -250px;
+        }
+        100% {
+          left: 0;
+        }
+      }
       ul {
         @include flex(column, center, center);
         width: 100%;
@@ -175,12 +194,13 @@
             margin-left: 20px;
             font-weight: 500;
             text-transform: uppercase;
+            transition: 0.2s ease-in;
             .home_icon {
               font-size: 20px;
-              color: #02a83d;
+              color: #05ff5c;
             }
             &:hover {
-              color: #0077b5;
+              color: #05ff5c;
             }
           }
         }
@@ -198,19 +218,20 @@
         }
         li {
           @include flex(row, center, center);
-          padding: 0 5px 0 5px;
+          padding: 0 7px 0 7px;
           a {
             color: white;
             text-transform: uppercase;
-            font-size: 14.5px;
+            font-size: 15px;
             font-weight: 500;
+            transition: 0.2s ease-in;
             &:hover {
-              text-shadow: $ts1;
+              color: #05ff5c;
             }
             .home_icon {
               font-size: 25px;
               margin-right: 5px;
-              color: #02a83d;
+              color: #05ff5c;
             }
           }
         }

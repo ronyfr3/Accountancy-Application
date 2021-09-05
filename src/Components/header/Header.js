@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { ImPhone } from "react-icons/im";
 import image from "../../images/prio.jpg";
 import {
   AiFillTwitterCircle,
@@ -10,25 +9,38 @@ import {
 // import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook, FaHome } from "react-icons/fa";
 import { GrClose } from "react-icons/gr";
+import { MdEmail } from "react-icons/md";
 
 const Header = () => {
   const [show, setShow] = useState(false);
+  // malito
+  const Mailto = ({ email, subject = "", body = "", children }) => {
+    let params = subject || body ? "?" : "";
+    if (subject) params += `subject=${encodeURIComponent(subject)}`;
+    if (body) params += `${subject ? "&" : ""}body=${encodeURIComponent(body)}`;
+
+    return <a href={`mailto:${email}${params}`}>{children}</a>;
+  };
   return (
     <div className="header_section">
       {/* UPPER SECTION OF HEADER */}
       <nav>
         <ul>
           <li>
+            <span className="phonelogo">&#9990;</span>
             <div className="phnNum">
-              <ImPhone className="phone" />
-              <small>+44 20 3355 8839</small>
+              <p>+44 20 3355 8839</p>
+              <p> +44 1582432053</p>
             </div>
           </li>
+          <li>{/* <p>info@priorityaccountancy.co.uk</p> */}</li>
           <div className="icons_header">
-            <FaFacebook className="header_social_icon1" />
+            <Mailto email="info@priorityaccountancy.co.uk" subject="" body="">
+              <MdEmail className="header_social_icon4" />
+            </Mailto>
             <AiFillTwitterCircle className="header_social_icon2" />
+            <FaFacebook className="header_social_icon1" />
             <AiFillLinkedin className="header_social_icon3" />
-            {/* <IoLogoWhatsapp className="header_social_icon4" /> */}
           </div>
         </ul>
       </nav>
@@ -46,27 +58,17 @@ const Header = () => {
             </li>
             <li>
               <Link to="/about" onClick={() => setShow(false)}>
-                about
+                about us
               </Link>
             </li>
             <li>
               <Link to="/service" onClick={() => setShow(false)}>
-                services
+                our services
               </Link>
             </li>
             <li>
               <Link to="/contact" onClick={() => setShow(false)}>
-                contact
-              </Link>
-            </li>
-            <li>
-              <Link to="/news" onClick={() => setShow(false)}>
-                news
-              </Link>
-            </li>
-            <li>
-              <Link to="/resource" onClick={() => setShow(false)}>
-                resources
+                contact us
               </Link>
             </li>
             <li>
@@ -83,9 +85,13 @@ const Header = () => {
         </div>
         <div className="hambergur">
           {!show ? (
-            <AiOutlineMenu onClick={() => setShow(!show)} className="hmenu" />
+            <span className="hmenu" onClick={() => setShow(!show)}>
+              &#9781;
+            </span>
           ) : (
-            <GrClose onClick={() => setShow(!show)} className="hmenu" />
+            <span className="hmenu" onClick={() => setShow(false)}>
+              &#9747;
+            </span>
           )}
         </div>
       </header>

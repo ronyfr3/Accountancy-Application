@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { BsFillClockFill } from "react-icons/bs";
-// import { ImPhone } from "react-icons/im";
-import { HiLocationMarker } from "react-icons/hi";
+import { FaFacebook } from "react-icons/fa";
+import { AiFillTwitterCircle, AiFillInstagram } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 import Accreditation from "./Accreditation";
-
+import { useDoubleTap } from "use-double-tap";
 const Footer = () => {
+  const [tx, setTx] = useState("Eazm Limited");
+  const bind = useDoubleTap((event) => {
+    setTx("Abdur Rakib Rony");
+  });
+  useEffect(() => {
+    setTimeout(() => {
+      setTx("Eazm Limited");
+    }, 3000);
+  });
+
   return (
     <>
       <div className="footer_section">
@@ -16,8 +25,8 @@ const Footer = () => {
           <div className="footer_about">
             <h1 className="footer_aboutUs">About Us</h1>
             <p className="footer_about_p">
-              Look no further for an accountant in Chiswick, West London. Our
-              headquarters is based in Chiswick Business Park.
+              We are here for your service.Our Quality of services makes you
+              reliable.
             </p>
             <Link to="/about">Read More</Link>
           </div>
@@ -25,16 +34,19 @@ const Footer = () => {
             <h1 className="footer_link_h1">Extra Links</h1>
             <ul>
               <li>
-                <Link>About Us</Link>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
-                <Link>FAQ's</Link>
+                <Link to="/service">Our Services</Link>
               </li>
               <li>
-                <Link>News</Link>
+                <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <Link>Privacy Policy</Link>
+                <Link to="/career">Careers</Link>
+              </li>
+              <li>
+                <Link to="/faq">FAQ's</Link>
               </li>
             </ul>
           </div>
@@ -42,26 +54,31 @@ const Footer = () => {
             <h1 className="footer_link_h1">Our Services</h1>
             <ul>
               <li>
-                <Link>Business Services</Link>
+                <Link to="/service">Company Accounts</Link>
               </li>
               <li>
-                <Link>Individual</Link>
+                <Link to="/service">Self-Assesmemnt</Link>
               </li>
               <li>
-                <Link>Wealth Management</Link>
+                <Link to="/service">Value Added Tax</Link>
               </li>
               <li>
-                <Link>Estate Planning</Link>
+                <Link to="/service">Payroll</Link>
+              </li>
+              <li>
+                <Link to="/service">Pension</Link>
+              </li>
+              <li>
+                <Link to="/service">CIS & IR35</Link>
+              </li>
+              <li>
+                <Link to="/service">Bookkeeping & Secretarial Services</Link>
               </li>
             </ul>
           </div>
           <div className="footer_contact">
             <h1 className="getInTouch">Get In Touch</h1>
             <div className="footer_address_section">
-              <p className="footer_contact_p">
-                <HiLocationMarker className="footer_location_logo" />
-                16 Lyndhurst Road, Luton, England, LU1 1LN{" "}
-              </p>
               <p className="footer_contact_p">
                 <span className="footer_phn_logo">&#9990;</span>
                 Tel: 02033558839; 01582432053; Mob: 07446861439
@@ -70,18 +87,40 @@ const Footer = () => {
                 <SiGmail className="footer_gmail_logo" />
                 info@priorityaccountancy.co.uk
               </p>
-              <p className="footer_contact_p">
-                <BsFillClockFill className="footer_clock_logo" />9 AM to 6 PM
-                Mon to Fri
-              </p>
+              {/* social logo */}
+              <div className="icons_footer">
+                <a
+                  href="https://www.facebook.com/Priorityaccountant/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <FaFacebook className="footer_social_icon1" />
+                </a>
+                <a
+                  href="https://www.facebook.com/Priorityaccountant/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <AiFillTwitterCircle className="footer_social_icon2" />
+                </a>
+                <a
+                  href="https://www.facebook.com/Priorityaccountant/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <AiFillInstagram className="footer_social_icon3" />
+                </a>
+                {/* <IoLogoWhatsapp className="header_social_icon4" /> */}
+              </div>
             </div>
           </div>
         </div>
         {/* bottom section */}
         <div className="bottom_Section_footer">
+          <div className="hiddenname" {...bind}></div>
           <p className="powerdby">
             © {new Date().getFullYear()} Priority Accountancy. Powered By{" "}
-            <span className="eazmltd">EAZM LIMITED</span>.
+            <span className="eazmltd">{tx}</span>.
           </p>
         </div>
       </div>
