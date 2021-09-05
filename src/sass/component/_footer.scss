@@ -33,6 +33,7 @@
     border-bottom: 1px dotted rgb(255, 229, 116);
     @include font-size($p-font-sizes);
     margin-top: 5px;
+    // padding: 0.5rem 0 0.5rem 0;
   }
 }
 .footer_links,
@@ -46,9 +47,17 @@
     margin-bottom: 0.5em;
     @include font-size($h2-font-sizes);
   }
-  ul li a {
-    color: white;
-    @include font-size($p-font-sizes);
+  ul {
+    li {
+      padding: 0.25rem 0;
+      a {
+        color: rgb(255, 226, 189);
+        @include font-size($p-font-sizes);
+        &:hover {
+          color: white;
+        }
+      }
+    }
   }
 }
 .footer_contact {

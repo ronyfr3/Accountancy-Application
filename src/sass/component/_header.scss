@@ -165,6 +165,10 @@
       }
     }
     .hideLinks {
+      display: none;
+      @include media(P) {
+        display: flex;
+      }
       z-index: 1000;
       position: absolute;
       top: 150px;

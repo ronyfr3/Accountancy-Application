@@ -51,7 +51,7 @@ const Accreditation = () => {
         ssr={true} // means to render carousel on server-side.
         infinite={true}
         autoPlay={true} //autoPlay={this.props.deviceType !== "mobile" ? true : false}
-        autoPlaySpeed={5000}
+        autoPlaySpeed={4000}
         keyBoardControl={false}
         customTransition="all 2s ease"
         itemClass="item_class"

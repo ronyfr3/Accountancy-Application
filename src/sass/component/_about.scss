@@ -30,7 +30,7 @@
       @include font-size($h2-font-sizes);
     }
     article {
-      color: #666666;
+      color: #3b3b3b;
       margin: 0 0 10px;
       text-transform: none;
       @include font-size($p-font-sizes);
@@ -58,7 +58,7 @@
     @include font-size($h1-font-sizes);
   }
   article {
-    color: #666666;
+    color: #3b3b3b;
     margin: 0 0 10px;
     text-transform: none;
     margin-top: 0.5em;
@@ -71,7 +71,7 @@
   width: 90%;
   margin-top: 1.5em;
   article {
-    color: #666666;
+    color: #3b3b3b;
     margin: 0 0 10px;
     text-transform: none;
     margin-top: 1em;
@@ -108,7 +108,6 @@
       }
       h5 {
         font-size: 22px;
-        color: #242424;
         @include media(P) {
           font-size: 18px;
         }

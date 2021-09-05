@@ -39,22 +39,7 @@ const About = () => {
           <img src={image} alt="" />
         </div>
       </div>
-      {/* AWARDS */}
-      <div className="awards">
-        <h1>Awards</h1>
-        <article>
-          Top Accountant as per Vouched for and Hounslow Business Award Finalist
-          for 2015, 2016 & 2018. British Accountancy Award Finalist 2019, West
-          London Awards-Finance Business of the Year Finalist, Accounting &
-          Audit Tax Awards-Best Family Run Accountancy Practice London. This
-          will give you the assurance that you are working with the best. We
-          serve more than 1000 small businesses and contractors and are highly
-          recognized in the industry. Your dedicated account manager will call
-          you on a frequent basis and you can have ongoing discussions and
-          support with him around tax and any other area you may need. We will
-          provide you with advice and support throughout our service.
-        </article>
-      </div>
+
       {/* WHATS MAKES US DIFFERENT */}
       <div className="makesusdif">
         <h1>Why choose Priority?</h1>

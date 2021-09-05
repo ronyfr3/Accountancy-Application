@@ -6,6 +6,7 @@
   list-style: none;
   text-decoration: none;
   font-family: $fontFamily;
+  text-transform: capitalize;
 }
 *:before,
 *:after {
@@ -20,10 +21,18 @@ ul,
 li,
 a,
 span {
-  color: #4d4d4d;
-  font-weight: 300;
+  font-weight: 400;
+  color: #3b3b3b;
 }
-
+p {
+  @include font-size($p-font-sizes);
+}
+h1 {
+  @include font-size($h1-font-sizes);
+}
+h2 {
+  @include font-size($h2-font-sizes);
+}
 html,
 body {
   margin: 0;

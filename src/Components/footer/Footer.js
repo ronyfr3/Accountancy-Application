@@ -97,14 +97,14 @@ const Footer = () => {
                   <FaFacebook className="footer_social_icon1" />
                 </a>
                 <a
-                  href="https://www.facebook.com/Priorityaccountant/"
+                  href="https://twitter.com/priorityacct/status/1197945663763484673?s=24"
                   rel="noreferrer"
                   target="_blank"
                 >
                   <AiFillTwitterCircle className="footer_social_icon2" />
                 </a>
                 <a
-                  href="https://www.facebook.com/Priorityaccountant/"
+                  href="https://twitter.com/priorityacct/status/1197945663763484673?s=24"
                   rel="noreferrer"
                   target="_blank"
                 >
