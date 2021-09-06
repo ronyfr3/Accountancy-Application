@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
 const Contact = () => {
   const [inV, setInv] = useState({
     name: "",

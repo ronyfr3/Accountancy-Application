@@ -21,25 +21,24 @@
           margin-top: 25px;
           outline: none;
           border: none;
-          background-color: rgb(26, 58, 202);
+          background-color: $c4;
           padding: 13px 40px;
           color: white;
           @include font-size($p-font-sizes);
+          cursor: pointer;
           @include media(P) {
             padding: 10px 30px;
-          }
-          &:hover {
-            background-color: #00a73b;
-            cursor: pointer;
           }
         }
         .about_priority {
           text-align: start;
           text-transform: capitalize;
           @include font-size($h1-font-sizes);
+          font-weight: 700;
+          color: $c1;
           margin-bottom: 5px;
           span {
-            color: #00a63d;
+            color: $c4;
           }
           @include media(P) {
             text-align: center;
@@ -48,9 +47,8 @@
         }
         .about_text {
           text-align: justify;
-          word-spacing: 0.5px;
-          line-height: 2em;
           @include font-size($p-font-sizes);
+          word-spacing: 0.2px;
           @include media(P) {
             word-spacing: 1px;
             line-height: 1.7em;
@@ -65,8 +63,9 @@
         }
         img {
           border-radius: 10px;
-          width: 100%;
-          height: 100%;
+          width: 90%;
+          height: 90%;
+          filter: brightness(1.3);
           @include media(P) {
             width: 100%;
             border-radius: 0;
@@ -77,11 +76,12 @@
     .location_section {
       @include flex(column, center, center);
       width: 100%;
+      height: 100%;
       margin-top: 3em;
       .our_location {
         width: 100%;
         text-align: center;
-        color: #00a63d;
+        color: $c5;
         @include font-size($h2-font-sizes);
         font-weight: 500;
         text-transform: capitalize;
@@ -97,23 +97,21 @@
       }
       .loc_image {
         width: 90%;
-        @include flex(row, flex-start, space-around);
+        height: 100%;
+        @include flex(row, center, space-between);
         @include media(P) {
           width: 100%;
           @include flex(column, center, center);
         }
         .loc_img_text {
+          @include flex(column, center, space-between);
           width: 100%;
-          margin: 0 15px 0 15px;
+          height: 100%;
           overflow: hidden;
-          margin-bottom: 25px;
-          @include media(P) {
-            margin: 0;
-            width: 94%;
-          }
+          margin: 0 0.7rem 1.5rem 0.7rem;
           img {
-            width: 100%;
-            height: 100%;
+            width: 90%;
+            height: 300px;
             transition: transform 0.2s ease-in;
             &:hover {
               transform: scale(1.05);
@@ -125,13 +123,13 @@
             }
           }
           .loc_text {
-            width: 95%;
+            width: 90%;
             .com_name {
               margin: 0;
               @include font-size($h1-font-sizes);
             }
             .com_address {
-              color: #6f6f6f;
+              color: $c1;
               text-align: justify;
               word-spacing: 0.5px;
               margin-bottom: 1.2em;

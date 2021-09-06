@@ -3,7 +3,7 @@
   box-shadow: $shadow1;
   nav {
     width: 100%;
-    background-color: #000428;
+    background-color: $c11;
     ul {
       @include flex(row, center, space-between);
       width: 100%;
@@ -95,18 +95,7 @@
     // margin-bottom: 1em;
     padding: 1.5rem 0 1.5rem 0;
     width: 100%; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: #2980b9; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #2c3e50,
-      #2980b9
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #2c3e50,
-      #2980b9
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-color: #262c47;
     .hambergur {
       display: none;
 
@@ -176,14 +165,17 @@
       width: 100%;
       background-color: white;
       box-shadow: rgba(0, 0, 0, 0.2) 0 2px 10px;
-      transition: all 0.3s ease;
       animation: slidees 0.3s ease;
       @keyframes slidees {
         0% {
-          left: -250px;
+          top: -10px;
+          opacity: 0;
+          width: 50%;
         }
         100% {
-          left: 0;
+          top: 150px;
+          opacity: 1;
+          width: 100%;
         }
       }
       ul {

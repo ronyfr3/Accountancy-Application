@@ -20,7 +20,7 @@
       0px 0px 4px white;
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
-
+    padding: 5px;
     &::before {
       content: "";
       background-image: conic-gradient(#04b0ee 20deg, transparent 120deg);
