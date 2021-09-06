@@ -1,68 +1,82 @@
-.service {
+.mainterasab {
   @include flex(column, center, center);
-  padding-bottom: 5em;
-  @include media(P) {
-    padding-bottom: 3em;
-  }
-  margin-top: 2rem;
   width: 100%;
-  h1 {
-    @include font-size($h1-font-sizes);
-    color: #1e73be;
-  }
-  .service_container {
-    @include flex(column, center, center);
-    width: 80%;
+  height: 100%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  .koimilgaya {
+    @include flex(column, flex-start, center);
     @include media(P) {
-      width: 100%;
+      @include flex(column, flex-start, center);
     }
-    .service_returnDiv {
-      @include flex(column, center, center);
-      width: 100%;
-      position: relative;
-      box-shadow: $shadow1;
-      margin: 1rem 0 1rem 0;
-      .service_returnImgDiv {
-        width: 100%;
-        img {
+    width: 90%;
+    height: 300px;
+    padding-left: 3rem;
+    box-shadow: $shadow2;
+    margin-bottom: 1rem;
+    @include media(P) {
+      padding-left: 0rem;
+      height: 100%;
+      padding: 15px;
+    }
+    h1 {
+      margin: 0.3rem 0;
+    }
+    .askdejne {
+      @include flex(row, flex-start, center);
+      @include media(P) {
+        @include flex(column, flex-start, center);
+      }
+      p {
+        margin-left: 1rem;
+        @include media(P) {
+          margin-left: 0;
+          margin-top: 0.5rem;
+        }
+      }
+      img {
+        width: 300px;
+        height: 200px;
+        @include media(P) {
           width: 100%;
-          height: 250px;
-          filter: brightness(0.3);
-          object-fit: cover;
         }
-        h1 {
-          position: absolute;
-          top: 25%;
-          left: 50%;
-          transform: translate(-50%, -25%);
-          color: white;
-          font-weight: 600;
-          @include font-size($h1-font-sizes);
-          text-shadow: rgba(255, 255, 255, 0.8) 0px 0px 20px;
-          text-transform: capitalize;
-          letter-spacing: 1px;
+      }
+    }
+    h1 {
+      color: $c1;
+    }
+  }
+  .lopps {
+    @include flex(column, flex-end, center);
+    width: 90%;
+    height: 100%;
+    padding-right: 3rem;
+    box-shadow: $shadow2;
+    @include media(P) {
+      padding-right: 0;
+      padding: 15px;
+    }
+    h1 {
+      margin: 0.3rem 0;
+    }
+    .skjskssjsjk {
+      @include flex(row, flex-start, center);
+      @include media(P) {
+        @include flex(column, flex-start, center);
+      }
+      flex-direction: row-reverse;
+      p {
+        margin-right: 1rem;
+        @include media(P) {
+          margin-right: 0;
+          margin-top: 0.5rem;
         }
-        .ksjsjs {
-          padding: 3rem;
-          @include media(P) {
-            padding: 2rem;
-          }
-          h2 {
-            @include font-size($h2-font-sizes);
-            text-transform: capitalize;
-            font-weight: 400;
-          }
-          p {
-            @include font-size($p-font-sizes);
-            text-transform: capitalize;
-            margin-bottom: 0.5rem;
-            margin-top: 0.5rem;
-          }
-          li {
-            list-style: disc;
-            @include font-size($p-font-sizes);
-            text-transform: capitalize;
-          }
+      }
+      img {
+        width: 300px;
+        height: 200px;
+        @include media(P) {
+          width: 100%;
         }
       }
     }

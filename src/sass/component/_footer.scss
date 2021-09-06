@@ -2,6 +2,7 @@
   @include flex(column, center, center);
   width: 100%;
   background-color: #262c47;
+  margin-top: auto;
 }
 .footer_content {
   @include flex(row, flex-start, space-around);

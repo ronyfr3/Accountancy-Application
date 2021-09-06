@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import image from "../../images/prio.jpg";
-import {
-  AiFillTwitterCircle,
-  AiOutlineMenu,
-  AiFillLinkedin,
-} from "react-icons/ai";
-// import { IoLogoWhatsapp } from "react-icons/io";
+import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
 import { FaFacebook, FaHome } from "react-icons/fa";
-import { GrClose } from "react-icons/gr";
 import { MdEmail } from "react-icons/md";
 
 const Header = () => {

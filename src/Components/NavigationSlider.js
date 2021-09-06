@@ -74,7 +74,7 @@ const NavigationSlider = ({ deviceType }) => {
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         dotListClass="custom-dot-list-style"
-        itemClass="itemClass"
+        // itemClass="itemClass"
       >
         {data.map((x) => {
           const { image, title } = x;

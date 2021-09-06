@@ -1,10 +1,10 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import img1 from "../../images/xero.png";
-import img2 from "../../images/acca.jpg";
-import img3 from "../../images/books.png";
-import img4 from "../../images/ico.jpg";
+import img1 from "../../images/xeroo.png";
+import img2 from "../../images/accaa.png";
+import img3 from "../../images/book.png";
+import img4 from "../../images/icoo.jpg";
 
 const Accreditation = () => {
   const images = [
@@ -58,7 +58,7 @@ const Accreditation = () => {
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         //   dotListClass="custom-dot-list-style"
-        //   itemClass="carousel-item-padding-10-px"
+        // itemClass="carousel-item-padding-40-px"
       >
         {images.map((x, i) => {
           const { image } = x;

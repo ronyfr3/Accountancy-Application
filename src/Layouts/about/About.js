@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../images/self2.jpeg";
+import image from "../../images/joynal2.jpeg";
 import {
   FaLanguage,
   FaCrosshairs,

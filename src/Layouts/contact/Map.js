@@ -22,6 +22,7 @@ const Map = () => {
       ></script>
       <iframe
         className="mapFrame"
+        title="Priority Accountancy2"
         width="520"
         height="400"
         frameborder="0"
