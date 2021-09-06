@@ -1,0 +1,18 @@
+// MAP
+.map_Wrappersss {
+  @include flex(row, center, space-around);
+  width: 90%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  @include media(P) {
+    @include flex(column, center, center);
+  }
+}
+.mapFrame {
+  width: 45%;
+  height: 350px;
+  @include media(P) {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

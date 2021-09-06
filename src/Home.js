@@ -1,9 +1,8 @@
 import React from "react";
 import Map from "./Layouts/contact/Map";
-import ServiceSection from "./Components/ServiceSection";
 import image1 from "./images/joynal1.jpeg";
-import loc1 from "./images/loc1.jpg";
-import loc2 from "./images/loc2.jpg";
+import loc1 from "./images/carousel2.jpg";
+import loc2 from "./images/carousel4.jpg";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Slider from "./Components/Slider";
@@ -44,7 +43,9 @@ const Home = () => {
             <h1 className="come_visit">come and visit us</h1>
             <div className="loc_image">
               <div className="loc_img_text">
-                <LazyLoadImage src={loc1} alt="" />
+                <div className="ksksksshh">
+                  <LazyLoadImage src={loc1} alt="" />
+                </div>
                 <div className="loc_text">
                   <h1 className="com_name">London Office</h1>
                   <small className="com_address">
@@ -56,7 +57,9 @@ const Home = () => {
                 </div>
               </div>
               <div className="loc_img_text">
-                <LazyLoadImage src={loc2} alt="" />
+                <div className="ksksksshh">
+                  <LazyLoadImage src={loc2} alt="" />
+                </div>
                 <div className="loc_text">
                   <h1 className="com_name">Luton Office</h1>
                   <small className="com_address">
