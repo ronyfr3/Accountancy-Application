@@ -11,9 +11,10 @@
     width: 100%;
     height: 100%;
     .contact_form_content {
+      @include flex(column, center, center);
       text-align: center;
       background-color: #2e3143;
-      width: 60%;
+      width: 50%;
       height: 376px;
       padding: 12px 30px;
       @include media(P) {
@@ -27,12 +28,15 @@
         font-weight: 500;
         line-height: 1em;
         color: white;
+        margin-bottom: 1.5rem;
         @include font-size($h1-font-sizes);
       }
       form {
         @include flex(column, center, center);
-        width: 95%;
-        margin-top: 2em;
+        width: 100%;
+        @include media(P) {
+          width: 95%;
+        }
         .form_sec1,
         .form_sec2 {
           width: 100%;
@@ -61,7 +65,7 @@
     }
   }
   .form_img {
-    width: 40%;
+    width: 50%;
     height: 100%;
     @include media(P) {
       width: 100%;

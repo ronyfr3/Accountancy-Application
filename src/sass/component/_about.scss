@@ -113,3 +113,17 @@
     }
   }
 }
+
+.sosjjnwj {
+  @include flex(column, flex-start, center);
+  width: 90%;
+  margin: 3rem 0;
+  h1 {
+    margin-bottom: 1rem;
+    color: #00a37b;
+    font-weight: 600;
+  }
+  p {
+    color: #3b3b3b;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import Map from "./Layouts/contact/Map";
-import image1 from "./images/joynal1.jpeg";
+import image1 from "./images/joynal1.jpg";
 import loc1 from "./images/carousel2.jpg";
 import loc2 from "./images/carousel4.jpg";
 

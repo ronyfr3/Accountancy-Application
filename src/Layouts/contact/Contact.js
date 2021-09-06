@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import image from "../../images/joynal2.jpeg";
+import image from "../../images/joynal2.jpg";
 import { BiMessageRoundedCheck } from "react-icons/bi";
 const Contact = () => {
   const [inV, setInv] = useState({

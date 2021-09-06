@@ -2,8 +2,8 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import img1 from "../../images/xeroo.png";
-import img2 from "../../images/accaa.png";
-import img3 from "../../images/book.png";
+import img2 from "../../images/accas.jpg";
+import img3 from "../../images/book.jpg";
 import img4 from "../../images/icoo.jpg";
 
 const Accreditation = () => {

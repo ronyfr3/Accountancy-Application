@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import image from "../../images/prio.jpg";
+import image from "../../images/prior.png";
 import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
 import { FaFacebook, FaHome } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -41,6 +41,10 @@ const Header = () => {
       <header>
         <div className="header_image">
           <img src={image} alt="" />
+          <div className="apdfn">
+            <b>Priority Accountancy</b>
+            <small>we're here to assist your business succeed..</small>
+          </div>
         </div>
 
         <div className={show ? "hideLinks" : "second_header"}>
