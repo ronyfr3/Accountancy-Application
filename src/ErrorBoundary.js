@@ -10,7 +10,7 @@ class ErrorBoundary extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="errorror">
         {this.state.error ? (
           <div className="errcss">
             <h1>Failed to load resorces!!</h1>

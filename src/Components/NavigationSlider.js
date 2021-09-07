@@ -8,7 +8,6 @@ import pen from "../images/pen.jpg";
 import pay from "../images/pay.jpg";
 import work from "../images/work.jpg";
 import { Link } from "react-router-dom";
-// import { GoPrimitiveDot } from "react-icons/go";
 const NavigationSlider = () => {
   const data = [
     {
