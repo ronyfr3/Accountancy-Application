@@ -106,14 +106,20 @@
   .powerdby {
     color: white;
     @include font-size($p-font-sizes);
+    @include media-480 {
+      font-size: 15px;
+    }
     .eazmltd {
       color: rgb(105, 248, 105);
       @include font-size($p-font-sizes);
       font-weight: 400;
+      @include media-480 {
+        font-size: 15px;
+      }
     }
   }
   .hiddenname {
-    width: 20px;
+    width: 10px;
     height: 100%;
     background-color: transparent;
     position: absolute;
@@ -128,10 +134,10 @@
   .footer_social_icon3 {
     color: white;
     margin: 5px 7px 0 0;
-    font-size: 24px;
+    font-size: 22px;
     cursor: pointer;
   }
   .footer_social_icon1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 }

@@ -12,11 +12,15 @@
     width: 90%;
     height: 300px;
     padding-left: 3rem;
-    box-shadow: $shadow2;
-    margin-bottom: 1rem;
+    box-shadow: $shadow1;
+    margin: 1.5rem;
     @include media(P) {
       padding-left: 0rem;
       height: 100%;
+      width: 85%;
+      padding: 15px;
+    }
+    @include media(TP) {
       padding: 15px;
     }
     h1 {
@@ -51,9 +55,14 @@
     width: 90%;
     height: 100%;
     padding-right: 3rem;
-    box-shadow: $shadow2;
+    // padding: 15px;
+    box-shadow: $shadow1;
     @include media(P) {
       padding-right: 0;
+      padding: 15px;
+      width: 85%;
+    }
+    @include media(TP) {
       padding: 15px;
     }
     h1 {

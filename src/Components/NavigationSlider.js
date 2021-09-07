@@ -8,6 +8,7 @@ import pen from "../images/pen.jpg";
 import pay from "../images/pay.jpg";
 import work from "../images/work.jpg";
 import { Link } from "react-router-dom";
+// import { GoPrimitiveDot } from "react-icons/go";
 const NavigationSlider = () => {
   const data = [
     {
@@ -39,41 +40,54 @@ const NavigationSlider = () => {
       title: "Bookkeeping & Secretarial Services",
     },
   ];
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 4,
-      slidesToSlide: 1, // optional, default to 1.
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 3,
-      slidesToSlide: 1, // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1, // optional, default to 1.
-    },
-  };
   return (
     <div className="navslider">
       <Carousel
+        additionalTransfrom={0}
+        arrows
+        autoPlay
+        autoPlaySpeed={10000}
         centerMode={false}
-        swipeable={false}
+        className=""
+        containerClass="containerr"
+        dotListClass=""
         draggable={false}
-        showDots={true}
-        responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
-        infinite={true}
-        autoPlay={true} //autoPlay={this.props.deviceType !== "mobile" ? true : false}
-        autoPlaySpeed={7000}
+        focusOnSelect={false}
+        infinite
+        itemClass="itemsss"
         keyBoardControl={false}
-        customTransition="all 400ms ease-in-out"
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
-        dotListClass="custom-dot-list-style"
-        itemClass="item-classs"
+        minimumTouchDrag={80}
+        renderButtonGroupOutside={false}
+        renderDotsOutside={false}
+        responsive={{
+          desktop: {
+            breakpoint: {
+              max: 3000,
+              min: 1024,
+            },
+            items: 3,
+            partialVisibilityGutter: 40,
+          },
+          mobile: {
+            breakpoint: {
+              max: 464,
+              min: 0,
+            },
+            items: 1,
+            partialVisibilityGutter: 30,
+          },
+          tablet: {
+            breakpoint: {
+              max: 1024,
+              min: 464,
+            },
+            items: 2,
+            partialVisibilityGutter: 30,
+          },
+        }}
+        showDots={false}
+        slidesToSlide={2}
+        swipeable={false}
       >
         {data.map((x) => {
           const { image, title } = x;

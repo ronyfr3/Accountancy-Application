@@ -24,6 +24,9 @@
       padding: 12px;
       border-radius: 5px;
       text-shadow: 0 0 2px white;
+      @include media-480 {
+        @include font-size($h1-font-sizes);
+      }
     }
   }
   .muetd {
@@ -38,6 +41,7 @@
       color: $c5;
       position: relative;
       margin-bottom: 0.2rem;
+      text-transform: uppercase;
       &::after {
         content: "";
         position: absolute;

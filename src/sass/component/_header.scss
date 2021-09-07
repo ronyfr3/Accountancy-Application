@@ -30,11 +30,17 @@
         }
         .header_social_icon2 {
           font-size: 25px;
+          @include media-480 {
+            font-size: 18px;
+          }
           &:hover {
             color: #1da1f2;
           }
         }
         .header_social_icon3 {
+          @include media-480 {
+            font-size: 18px;
+          }
           font-size: 25px;
           &:hover {
             color: #0077b5;
@@ -42,6 +48,9 @@
         }
         .header_social_icon4 {
           font-size: 23.5px;
+          @include media-480 {
+            font-size: 18px;
+          }
           padding-top: 0.24rem;
           &:hover {
             color: #08f764;
@@ -63,6 +72,9 @@
         }
         .phonelogo {
           font-size: 22px;
+          @include media-480 {
+            font-size: 19px;
+          }
           color: white;
           margin-right: 0.2rem;
           margin-bottom: 0.2rem;
@@ -71,10 +83,12 @@
           @include flex(row, center, center);
           p {
             margin-right: 0.8rem;
-            font-size: 14px;
             color: white;
             font-weight: 400;
             @include font-size($p-font-sizes);
+            @include media-480 {
+              font-size: 14px;
+            }
           }
         }
         button {
@@ -91,8 +105,6 @@
   }
   header {
     @include flex(row, center, space-between);
-    // margin-top: 1em;
-    // margin-bottom: 1em;
     padding: 1.5rem 0 1.5rem 0;
     width: 100%; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-color: #262c47;
@@ -117,24 +129,40 @@
       @include flex(row, center, center);
       margin-left: 1.3em;
       @include media(P) {
-        margin-left: 0.7em;
+        margin-left: 0.2em;
+      }
+      @include media-480 {
+        margin-left: 0.2em;
+      }
+      @include media(TP) {
+        margin-left: 0rem;
       }
       .apdfn {
         @include flex(column, flex-start, center);
         margin-left: 0.05rem;
+        width: 250px;
+        @include media-480 {
+          width: 200px;
+        }
         b {
           color: white;
           @include font-size($p-font-sizes);
+          @include media(TP) {
+            font-size: 18px;
+          }
         }
         small {
           color: $c15;
+          @include media(TP) {
+            font-size: 13px;
+          }
         }
       }
       img {
         width: 80px;
         height: 75px;
         margin-left: 0.5em;
-        filter: brightness(1.5) saturate(5);
+        filter: brightness(1.4) saturate(4);
         border-radius: 50%;
         @include media(P) {
           width: 60px;
@@ -143,6 +171,10 @@
         @include media-480 {
           width: 55px;
           height: 55px;
+        }
+        @include media(TP) {
+          width: 65px;
+          height: 65px;
         }
       }
       .header_image_content {
@@ -227,6 +259,9 @@
         margin-right: 2em;
         @include media(P) {
           margin-right: 1em;
+        }
+        @include media(TP) {
+          margin-right: 0.3em;
         }
         li {
           @include flex(row, center, center);
