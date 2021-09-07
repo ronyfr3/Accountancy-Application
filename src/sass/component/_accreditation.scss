@@ -1,7 +1,7 @@
 .accreditations {
   @include flex(column, center, center);
   width: 100%;
-  height: 250px;
+  height: 220px;
   background-color: $c5;
   padding-bottom: 2.5em;
   // padding: 30px;
@@ -19,18 +19,23 @@
   .carousel-container {
     width: 95%;
     height: 100%;
-    .item_class {
+    .joyboi {
+      width: 200px;
+      height: 130px;
+      margin: 0 1.5rem 0 0.5rem;
+      overflow: hidden;
       @include media(P) {
-        margin-top: 8em;
-        margin-left: 0.5em;
+        height: 125px;
+        transform: scale(1.2);
+        margin: -2rem 1.5rem 0 1.5rem;
       }
     }
     .image_accreditation {
-      width: 95%;
-      height: 60%;
+      width: 100%;
+      height: 100%;
       .acc_image {
         width: 100%;
-        height: 170px;
+        height: 100%;
         object-fit: contain;
       }
     }

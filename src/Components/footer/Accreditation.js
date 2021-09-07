@@ -54,16 +54,15 @@ const Accreditation = () => {
         autoPlaySpeed={4000}
         keyBoardControl={false}
         customTransition="all 2s ease"
-        itemClass="item_class"
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         //   dotListClass="custom-dot-list-style"
-        // itemClass="carousel-item-padding-40-px"
+        itemClass="joyboi"
       >
         {images.map((x, i) => {
           const { image } = x;
           return (
-            <div className="image_accreditation">
+            <div className="image_accreditation" key={i}>
               <LazyLoadImage src={image} alt="" className="acc_image" />
             </div>
           );

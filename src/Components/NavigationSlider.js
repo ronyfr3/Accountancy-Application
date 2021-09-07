@@ -8,7 +8,7 @@ import pen from "../images/pen.jpg";
 import pay from "../images/pay.jpg";
 import work from "../images/work.jpg";
 import { Link } from "react-router-dom";
-const NavigationSlider = ({ deviceType }) => {
+const NavigationSlider = () => {
   const data = [
     {
       image: as,
@@ -70,11 +70,10 @@ const NavigationSlider = ({ deviceType }) => {
         autoPlaySpeed={7000}
         keyBoardControl={false}
         customTransition="all 400ms ease-in-out"
-        itemClass="item_class"
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         dotListClass="custom-dot-list-style"
-        // itemClass="itemClass"
+        itemClass="item-classs"
       >
         {data.map((x) => {
           const { image, title } = x;

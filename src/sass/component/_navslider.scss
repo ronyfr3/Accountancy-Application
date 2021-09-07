@@ -4,40 +4,42 @@
   overflow: hidden;
   height: 200px;
   .carousel-container {
-    width: 95%;
-    height: 100%;
-  }
-  .itemClass {
-    width: 200px;
-    height: 130px;
-    margin: 0 2rem 0 2rem;
-    transform: scale(1.15);
-    overflow: hidden;
-    @include media(P) {
-      margin: 0 1.3rem 0 1.3rem;
-    }
-  }
-  .navimahsjs {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    .sliderrr_image {
-      width: 100%;
-      height: 130px;
-      position: relative;
-      object-fit: cover;
-    }
-    small {
-      position: absolute;
-      z-index: 1000;
-      bottom: 0;
-      left: 0;
-      padding: 8px;
-      color: white;
-      background-color: $c15;
-      width: 100%;
-      font-weight: 300;
-      text-transform: uppercase;
-    }
   }
 }
+.item-classs {
+  width: 200px;
+  height: 150px;
+  margin: 0 1.5rem 0 0.5rem;
+  overflow: hidden;
+  @include media(P) {
+    height: 125px;
+    transform: scale(1.2);
+    margin: -2rem 1.5rem 0 1.5rem;
+  }
+}
+.navimahsjs {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .sliderrr_image {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    object-fit: cover;
+  }
+  small {
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    padding: 8px;
+    color: white;
+    background-color: $c15;
+    width: 100%;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+// }
