@@ -11,19 +11,19 @@ const Slider = () => {
   const images = [
     {
       image: carousel1,
-      text: "Priority Accountacy",
+      text: "Priority Accountancy",
     },
     {
       image: carousel2,
-      text: "Priority Accountacy",
+      text: "Priority Accountancy",
     },
     {
       image: carousel3,
-      text: "Priority Accountacy",
+      text: "Priority Accountancy",
     },
     {
       image: carousel4,
-      text: "Priority Accountacy",
+      text: "Priority Accountancy",
     },
   ];
   const responsive = {
