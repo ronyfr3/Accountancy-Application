@@ -2,6 +2,7 @@
   @include flex(column, center, center);
   width: 100%;
   margin: 1.5rem 0 3rem 0;
+  flex: 1 0 auto;
   @include media(P) {
     @include flex(column, center, center);
   }

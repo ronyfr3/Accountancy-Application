@@ -2,133 +2,118 @@
   @include flex(column, center, center);
   width: 100%;
   background-color: #262c47;
-  // margin-top: auto;
-}
-.footer_content {
-  @include flex(row, flex-start, space-around);
-  padding: 20px 20px 25px 20px;
-  @include media(P) {
-    @include flex(column, center, center);
+  .footer_content {
+    @include flex(row, flex-start, space-around);
+    padding: 20px 20px 25px 20px;
+    @include media(P) {
+      @include flex(column, center, center);
+    }
+    @include media(PL) {
+      @include flex(column, center, center);
+    }
   }
-  @include media(PL) {
-    @include flex(column, center, center);
+  .footer_about {
+    @include flex(column, flex-start, center);
+    width: 60%;
+    margin-top: 1.5em;
+    margin-right: 2em;
+    @include media(P) {
+      margin-right: 0;
+    }
+    @include media(PL) {
+      margin-right: 0;
+    }
+    .footer_aboutUs {
+      border-bottom: 2px solid green;
+      color: #a3a4ac;
+      margin-bottom: 0.5em;
+      @include font-size($h2-font-sizes);
+    }
+    .footer_about_p {
+      color: white;
+      @include font-size($p-font-sizes);
+    }
+    a {
+      color: #049a40;
+      border-bottom: 1px dotted rgb(255, 229, 116);
+      @include font-size($p-font-sizes);
+      margin-top: 5px;
+      // padding: 0.5rem 0 0.5rem 0;
+    }
   }
-}
-.footer_about {
-  @include flex(column, flex-start, center);
-  width: 60%;
-  margin-top: 1.5em;
-  margin-right: 2em;
-  @include media(P) {
-    margin-right: 0;
-  }
-  @include media(PL) {
-    margin-right: 0;
-  }
-  .footer_aboutUs {
-    border-bottom: 2px solid green;
-    color: #a3a4ac;
-    margin-bottom: 0.5em;
-    @include font-size($h2-font-sizes);
-  }
-  .footer_about_p {
-    color: white;
-    @include font-size($p-font-sizes);
-  }
-  a {
-    color: #049a40;
-    border-bottom: 1px dotted rgb(255, 229, 116);
-    @include font-size($p-font-sizes);
-    margin-top: 5px;
-    // padding: 0.5rem 0 0.5rem 0;
-  }
-}
-.footer_links,
-.footer_services {
-  @include flex(column, flex-start, center);
-  width: 60%;
-  margin-top: 1.5em;
-  .footer_link_h1 {
-    border-bottom: 2px solid green;
-    color: #a3a4ac;
-    margin-bottom: 0.5em;
-    @include font-size($h2-font-sizes);
-  }
-  ul {
-    li {
-      padding: 0.25rem 0;
-      a {
-        color: white;
-        @include font-size($p-font-sizes);
+  .footer_links,
+  .footer_services {
+    @include flex(column, flex-start, center);
+    width: 60%;
+    margin-top: 1.5em;
+    .footer_link_h1 {
+      border-bottom: 2px solid green;
+      color: #a3a4ac;
+      margin-bottom: 0.5em;
+      @include font-size($h2-font-sizes);
+    }
+    ul {
+      li {
+        padding: 0.25rem 0;
+        a {
+          color: white;
+          @include font-size($p-font-sizes);
+        }
       }
     }
   }
-}
-.footer_contact {
-  @include flex(column, flex-start, center);
-  width: 60%;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  .getInTouch {
-    border-bottom: 2px solid green;
-    color: #a3a4ac;
-    margin-bottom: 0.5em;
-    @include font-size($h2-font-sizes);
-  }
-  .footer_contact_p {
-    width: 100%;
-    color: white;
-    @include font-size($p-font-sizes);
-    @include flex(row, flex-start, flex-start);
-    margin-bottom: 0.5rem;
-  }
-  .footer_phn_logo {
-    font-size: 21px;
-    color: white;
-    margin-right: 0.25rem;
-  }
-  .footer_clock_logo {
-    font-size: 16px;
-    margin-right: 0.3rem;
-    margin-top: 0.25rem;
-  }
-  .footer_location_logo {
-    font-size: 24px;
-  }
-  .footer_gmail_logo {
-    font-size: 16px;
-    margin-top: 0.26rem;
-    margin-right: 0.3rem;
-  }
-}
-
-.bottom_Section_footer {
-  @include flex(row, center, center);
-  width: 100%;
-  position: relative;
-  height: 40px;
-  padding: 8px 0;
-  background-color: $c11;
-  @include media(MS) {
-    padding: 10px;
-    text-align: center;
-  }
-  .powerdby {
-    color: white;
-    @include font-size($p-font-sizes);
-    @include media(P) {
-      font-size: 15px;
+  .footer_contact {
+    @include flex(column, flex-start, center);
+    width: 60%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    .getInTouch {
+      border-bottom: 2px solid green;
+      color: #a3a4ac;
+      margin-bottom: 0.5em;
+      @include font-size($h2-font-sizes);
     }
-    @include media(PL) {
-      font-size: 15px;
-    }
-    @include media(MS) {
-      font-size: 14px;
-    }
-    .eazmltd {
-      color: rgb(105, 248, 105);
+    .footer_contact_p {
+      width: 100%;
+      color: white;
       @include font-size($p-font-sizes);
-      font-weight: 400;
+      @include flex(row, flex-start, flex-start);
+      margin-bottom: 0.5rem;
+    }
+    .footer_phn_logo {
+      font-size: 21px;
+      color: white;
+      margin-right: 0.25rem;
+    }
+    .footer_clock_logo {
+      font-size: 16px;
+      margin-right: 0.3rem;
+      margin-top: 0.25rem;
+    }
+    .footer_location_logo {
+      font-size: 24px;
+    }
+    .footer_gmail_logo {
+      font-size: 16px;
+      margin-top: 0.26rem;
+      margin-right: 0.3rem;
+    }
+  }
+
+  .bottom_Section_footer {
+    @include flex(row, center, center);
+    width: 100%;
+    position: relative;
+    height: 40px;
+    padding: 8px 0;
+    background-color: $c11;
+    @include media(MS) {
+      padding: 10px;
+      text-align: center;
+    }
+    .powerdby {
+      color: white;
+      @include font-size($p-font-sizes);
       @include media(P) {
         font-size: 15px;
       }
@@ -138,32 +123,46 @@
       @include media(MS) {
         font-size: 14px;
       }
+      .eazmltd {
+        color: rgb(105, 248, 105);
+        @include font-size($p-font-sizes);
+        font-weight: 400;
+        @include media(P) {
+          font-size: 15px;
+        }
+        @include media(PL) {
+          font-size: 15px;
+        }
+        @include media(MS) {
+          font-size: 14px;
+        }
+      }
+    }
+    .hiddenname {
+      width: 10px;
+      height: 100%;
+      background-color: transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      // padding: 8px 0;
+      @include media(MS) {
+        width: 20px;
+      }
     }
   }
-  .hiddenname {
-    width: 10px;
-    height: 100%;
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 8px 0;
-    @include media(MS) {
-      width: 20px;
-    }
-  }
-}
 
-.icons_footer {
-  .footer_social_icon1,
-  .footer_social_icon2,
-  .footer_social_icon3 {
-    color: white;
-    margin: 5px 7px 0 0;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  .footer_social_icon1 {
-    font-size: 20px;
+  .icons_footer {
+    .footer_social_icon1,
+    .footer_social_icon2,
+    .footer_social_icon3 {
+      color: white;
+      margin: 5px 7px 0 0;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .footer_social_icon1 {
+      font-size: 20px;
+    }
   }
 }

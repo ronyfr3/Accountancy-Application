@@ -2,6 +2,7 @@
   @include flex(column, center, center);
   margin-top: 2em;
   width: 100%;
+  flex: 1 0 auto;
   .home_content {
     width: 100%;
     .home_info {
