@@ -49,6 +49,12 @@
       @include media(P) {
         font-size: 24px;
       }
+      @include media(PL) {
+        font-size: 24px;
+      }
+      @include media(MS) {
+        font-size: 23px;
+      }
     }
     button {
       position: absolute;
@@ -68,6 +74,16 @@
       letter-spacing: 0.8px;
       cursor: pointer;
     }
+  }
+}
+@include media(PL) {
+  .slider_wrapper,
+  .carousel-container,
+  .item_class,
+  .slider_image_info,
+  .slider_image {
+    width: 100%;
+    height: 320px;
   }
 }
 @include media(P) {

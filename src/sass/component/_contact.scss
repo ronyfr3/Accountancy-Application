@@ -8,6 +8,10 @@
       @include flex(column, center, center);
       flex-direction: column-reverse;
     }
+    @include media(PL) {
+      @include flex(column, center, center);
+      flex-direction: column-reverse;
+    }
     width: 100%;
     height: 100%;
     .contact_form_content {
@@ -23,18 +27,30 @@
         height: 360px;
         margin: -10px;
       }
+      @include media(PL) {
+        width: 100%;
+        padding: 7px 13px;
+        height: 360px;
+        margin: -10px;
+      }
       .contact_use_to_book {
-        margin-top: 2em;
+        margin-top: 1em;
         font-weight: 500;
         line-height: 1em;
         color: white;
         margin-bottom: 1.5rem;
         @include font-size($h1-font-sizes);
+        @include media(MS) {
+          @include font-size($h2-font-sizes);
+        }
       }
       form {
         @include flex(column, center, center);
         width: 100%;
         @include media(P) {
+          width: 95%;
+        }
+        @include media(PL) {
           width: 95%;
         }
         .form_sec1,
@@ -48,9 +64,14 @@
           }
         }
         textarea {
-          width: 100%;
+          width: 99%;
           padding-bottom: 10px;
           margin-bottom: 1.5em;
+          &::placeholder {
+            padding-left: 0.5rem;
+            padding-top: 0.8rem;
+            color: $c4;
+          }
         }
         .cont_btn {
           border: none;
@@ -68,6 +89,9 @@
     width: 50%;
     height: 100%;
     @include media(P) {
+      width: 100%;
+    }
+    @include media(PL) {
       width: 100%;
     }
     img {
@@ -93,6 +117,10 @@
         @include flex(column, center, center);
         text-align: center;
       }
+      @include media(PL) {
+        @include flex(column, center, center);
+        text-align: center;
+      }
       p {
         font-weight: 500;
         color: $c5;
@@ -115,6 +143,10 @@
         cursor: pointer;
 
         @include media(P) {
+          width: 340px;
+          height: 130px;
+        }
+        @include media(PL) {
           width: 340px;
           height: 130px;
         }

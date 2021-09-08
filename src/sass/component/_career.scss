@@ -1,9 +1,9 @@
 .career_layout {
   @include flex(column, center, center);
   width: 100%;
-  margin-bottom: 3rem;
+  // margin-bottom: 3rem;
   text-transform: capitalize;
-  .popoing {
+  .popoingss {
     width: 100%;
     height: 350px;
     position: relative;
@@ -24,7 +24,10 @@
       padding: 12px;
       border-radius: 5px;
       text-shadow: 0 0 2px white;
-      @include media-480 {
+      @include media(P) {
+        @include font-size($h1-font-sizes);
+      }
+      @include media(PL) {
         @include font-size($h1-font-sizes);
       }
     }
@@ -33,6 +36,9 @@
     @include flex(column, flex-start, center);
     width: 60%;
     @include media(P) {
+      width: 80%;
+    }
+    @include media(PL) {
       width: 80%;
     }
     margin: 1rem 0 1rem 0;

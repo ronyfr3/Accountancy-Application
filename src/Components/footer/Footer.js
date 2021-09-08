@@ -120,7 +120,7 @@ const Footer = () => {
           <div className="hiddenname" {...bind}></div>
           <p className="powerdby">
             © {new Date().getFullYear()} Priority Accountancy. Powered By{" "}
-            <span className="eazmltd">{tx}</span>.
+            <span className="eazmltd">{tx}</span>
           </p>
         </div>
       </div>

@@ -17,38 +17,43 @@
   color: white;
 }
 
-// MIXIN FOR max-width:480px
-@mixin media-480 {
-  @media (max-width: 480px) {
-    @content;
-  }
-}
-
-// https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
-// phone-only=P
-// tablet-portrait-up=TP
-// tablet-landscape-up=TL
-// desktop-up=D
-// big-desktop-up=BD
 @mixin media($size) {
-  @if $size == P {
-    @media (max-width: 599px) {
+  // mobile small
+  @if $size == MS {
+    @media (max-width: 320px) {
       @content;
     }
-  } @else if $size == TP {
-    @media (min-width: 600px) {
+    //mobile medium
+  } @else if $size == MM {
+    @media (max-width: 375px) {
       @content;
     }
-  } @else if $size == TL {
-    @media (min-width: 900px) {
+    // mobilelarge
+  } @else if $size == P {
+    @media (max-width: 480px) {
       @content;
     }
-  } @else if $size == D {
-    @media (min-width: 1200px) {
+    // mobile extra large
+  } @else if $size == PL {
+    @media (max-width: 576px) {
       @content;
     }
-  } @else if $size == BG {
-    @media (min-width: 1800px) {
+    // tablet protrait
+  } @else if $size == T {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $size == L {
+    @media (min-width: 1024px) {
+      @content;
+    }
+    // laptop large
+  } @else if $size == LL {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  } @else if $size ==D {
+    @media (min-width: 2560px) {
       @content;
     }
   }
@@ -129,7 +134,7 @@ $h1-font-sizes: (
 );
 $h2-font-sizes: (
   320: (
-    16px,
+    17px,
   ),
   375: (
     17px,

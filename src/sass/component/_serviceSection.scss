@@ -8,6 +8,9 @@
     @include media(P) {
       margin: 1rem 0 0 1rem;
     }
+    @include media(PL) {
+      margin: 1rem 0 0 1rem;
+    }
   }
 }
 .serviceSec_ourservices_h1 {
@@ -33,12 +36,20 @@
     @include media(P) {
       font-size: 33px;
     }
+    @include media(PL) {
+      font-size: 33px;
+    }
   }
   .bsarrowright {
     position: absolute;
     bottom: 0.8em;
     right: 2em;
     @include media(P) {
+      position: absolute;
+      bottom: 0.6em;
+      right: 0.5em;
+    }
+    @include media(PL) {
       position: absolute;
       bottom: 0.6em;
       right: 0.5em;
@@ -53,12 +64,20 @@
       bottom: 0.6em;
       right: 1.8em;
     }
+    @include media(PL) {
+      position: absolute;
+      bottom: 0.6em;
+      right: 1.8em;
+    }
   }
   .serviceSec_details {
     @include flex(column, center, center);
     width: 95%;
     height: 350px;
     @include media(P) {
+      height: 100%;
+    }
+    @include media(PL) {
       height: 100%;
     }
     .serviceSec_info {
@@ -69,6 +88,9 @@
       margin-bottom: 10px;
       border-left: 3px solid #ffeeee;
       @include media(P) {
+        height: 250px;
+      }
+      @include media(PL) {
         height: 250px;
       }
       img {

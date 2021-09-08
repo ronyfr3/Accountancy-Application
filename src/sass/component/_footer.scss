@@ -10,6 +10,9 @@
   @include media(P) {
     @include flex(column, center, center);
   }
+  @include media(PL) {
+    @include flex(column, center, center);
+  }
 }
 .footer_about {
   @include flex(column, flex-start, center);
@@ -17,6 +20,9 @@
   margin-top: 1.5em;
   margin-right: 2em;
   @include media(P) {
+    margin-right: 0;
+  }
+  @include media(PL) {
     margin-right: 0;
   }
   .footer_aboutUs {
@@ -103,18 +109,34 @@
   height: 40px;
   padding: 8px 0;
   background-color: $c11;
+  @include media(MS) {
+    padding: 10px;
+    text-align: center;
+  }
   .powerdby {
     color: white;
     @include font-size($p-font-sizes);
-    @include media-480 {
+    @include media(P) {
       font-size: 15px;
+    }
+    @include media(PL) {
+      font-size: 15px;
+    }
+    @include media(MS) {
+      font-size: 14px;
     }
     .eazmltd {
       color: rgb(105, 248, 105);
       @include font-size($p-font-sizes);
       font-weight: 400;
-      @include media-480 {
+      @include media(P) {
         font-size: 15px;
+      }
+      @include media(PL) {
+        font-size: 15px;
+      }
+      @include media(MS) {
+        font-size: 14px;
       }
     }
   }
@@ -125,6 +147,10 @@
     position: absolute;
     top: 0;
     left: 0;
+    padding: 8px 0;
+    @include media(MS) {
+      width: 20px;
+    }
   }
 }
 

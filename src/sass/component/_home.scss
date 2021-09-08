@@ -10,13 +10,23 @@
       @include media(P) {
         @include flex(column, center, center);
       }
+      @include media(PL) {
+        @include flex(column, center, center);
+      }
       .home_para {
         @include media(P) {
+          @include flex(column, center, center);
+        }
+        @include media(PL) {
           @include flex(column, center, center);
         }
         width: 50%;
         padding: 30px;
         @include media(P) {
+          width: 90%;
+          padding: 0;
+        }
+        @include media(PL) {
           width: 90%;
           padding: 0;
         }
@@ -30,6 +40,9 @@
           @include font-size($p-font-sizes);
           cursor: pointer;
           @include media(P) {
+            padding: 10px 30px;
+          }
+          @include media(PL) {
             padding: 10px 30px;
           }
         }
@@ -47,6 +60,10 @@
             text-align: center;
             margin-bottom: 0;
           }
+          @include media(PL) {
+            text-align: center;
+            margin-bottom: 0;
+          }
         }
         .about_text {
           text-align: justify;
@@ -54,6 +71,11 @@
           word-spacing: 0.2px;
           margin-top: 0.3rem;
           @include media(P) {
+            width: 90%;
+            word-spacing: 1px;
+            line-height: 1.7em;
+          }
+          @include media(PL) {
             width: 90%;
             word-spacing: 1px;
             line-height: 1.7em;
@@ -68,12 +90,19 @@
         @include media(P) {
           width: 100%;
         }
+        @include media(PL) {
+          width: 100%;
+        }
         img {
           border-radius: 7px;
           width: 90%;
           height: 350px;
           filter: brightness(1.3);
           @include media(P) {
+            width: 90%;
+            border-radius: 0;
+          }
+          @include media(PL) {
             width: 90%;
             border-radius: 0;
           }
@@ -101,6 +130,9 @@
         @include media(P) {
           @include font-size($h1-font-sizes);
         }
+        @include media(PL) {
+          @include font-size($h1-font-sizes);
+        }
       }
       .loc_image {
         width: 90%;
@@ -110,12 +142,19 @@
           width: 100%;
           @include flex(column, center, center);
         }
+        @include media(PL) {
+          width: 100%;
+          @include flex(column, center, center);
+        }
         .loc_img_text {
           @include flex(column, center, space-between);
           width: 100%;
           height: 100%;
           overflow: hidden;
           margin: 0 0 1.5rem 0.7rem;
+          @include media(MS) {
+            margin: 0 0 1.5rem 0;
+          }
           .ksksksshh {
             width: 90%;
             height: 300px;
@@ -129,6 +168,11 @@
                 transform: scale(1.05);
               }
               @include media(P) {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 25px;
+              }
+              @include media(PL) {
                 width: 100%;
                 height: 100%;
                 margin-bottom: 25px;

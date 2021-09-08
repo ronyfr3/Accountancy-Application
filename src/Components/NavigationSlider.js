@@ -64,7 +64,7 @@ const NavigationSlider = () => {
               max: 3000,
               min: 1024,
             },
-            items: 3,
+            items: 4,
             partialVisibilityGutter: 40,
           },
           mobile: {
@@ -80,7 +80,7 @@ const NavigationSlider = () => {
               max: 1024,
               min: 464,
             },
-            items: 2,
+            items: 3,
             partialVisibilityGutter: 30,
           },
         }}

@@ -1,6 +1,5 @@
 .errorror {
   @include flex(column, center, center);
-  margin-top: 3rem;
   .errcss {
     @include flex(column, center, center);
     text-align: center;

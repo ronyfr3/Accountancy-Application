@@ -3,9 +3,13 @@
   width: 100%;
   height: 100%;
   margin-bottom: 2rem;
+  // margin-top: 1.5rem;
   .koimilgaya {
     @include flex(column, flex-start, center);
     @include media(P) {
+      @include flex(column, flex-start, center);
+    }
+    @include media(PL) {
       @include flex(column, flex-start, center);
     }
     width: 90%;
@@ -19,7 +23,13 @@
       width: 85%;
       padding: 15px;
     }
-    @include media(TP) {
+    @include media(PL) {
+      padding-left: 0rem;
+      height: 100%;
+      width: 85%;
+      padding: 15px;
+    }
+    @include media(T) {
       padding: 15px;
     }
     h1 {
@@ -30,9 +40,16 @@
       @include media(P) {
         @include flex(column, flex-start, center);
       }
+      @include media(PL) {
+        @include flex(column, flex-start, center);
+      }
       p {
         margin-left: 1rem;
         @include media(P) {
+          margin-left: 0;
+          margin-top: 0.5rem;
+        }
+        @include media(PL) {
           margin-left: 0;
           margin-top: 0.5rem;
         }
@@ -41,6 +58,9 @@
         width: 300px;
         height: 200px;
         @include media(P) {
+          width: 100%;
+        }
+        @include media(PL) {
           width: 100%;
         }
       }
@@ -61,7 +81,12 @@
       padding: 15px;
       width: 85%;
     }
-    @include media(TP) {
+    @include media(PL) {
+      padding-right: 0;
+      padding: 15px;
+      width: 85%;
+    }
+    @include media(T) {
       padding: 15px;
     }
     h1 {
@@ -72,10 +97,17 @@
       @include media(P) {
         @include flex(column, flex-start, center);
       }
+      @include media(PL) {
+        @include flex(column, flex-start, center);
+      }
       flex-direction: row-reverse;
       p {
         margin-right: 1rem;
         @include media(P) {
+          margin-right: 0;
+          margin-top: 0.5rem;
+        }
+        @include media(PL) {
           margin-right: 0;
           margin-top: 0.5rem;
         }
@@ -84,6 +116,9 @@
         width: 300px;
         height: 200px;
         @include media(P) {
+          width: 100%;
+        }
+        @include media(PL) {
           width: 100%;
         }
       }

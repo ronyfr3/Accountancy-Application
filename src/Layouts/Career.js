@@ -11,7 +11,7 @@ const Career = () => {
   };
   return (
     <div className="career_layout">
-      <div className="popoing">
+      <div className="popoingss">
         <img src={image} alt="" />
         <h2>Careers</h2>
       </div>

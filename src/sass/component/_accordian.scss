@@ -1,8 +1,11 @@
 .accordian {
   @include flex(column, center, center);
   width: 100%;
-  margin: 3rem 0 3rem 0;
+  margin: 1.5rem 0 3rem 0;
   @include media(P) {
+    @include flex(column, center, center);
+  }
+  @include media(PL) {
     @include flex(column, center, center);
   }
 
@@ -10,6 +13,9 @@
     @include flex(column, center, center);
     width: 85%;
     @include media(P) {
+      width: 90%;
+    }
+    @include media(PL) {
       width: 90%;
     }
   }
@@ -29,6 +35,7 @@
       @include font-size($p-font-sizes);
       text-transform: capitalize;
       background-color: #f1f2f6;
+      margin-right: 0.2rem;
       width: 100%;
     }
     .arrow_faq {

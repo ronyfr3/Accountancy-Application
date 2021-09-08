@@ -9,6 +9,10 @@
     padding-bottom: 0;
     height: 200px;
   }
+  @include media(PL) {
+    padding-bottom: 0;
+    height: 200px;
+  }
   z-index: 1000;
   .accreditations_h1 {
     @include font-size($h1-font-sizes);
@@ -25,6 +29,11 @@
       margin: 0 1.5rem 0 0.5rem;
       overflow: hidden;
       @include media(P) {
+        height: 125px;
+        transform: scale(1.2);
+        margin: -2rem 1.5rem 0 1.5rem;
+      }
+      @include media(PL) {
         height: 125px;
         transform: scale(1.2);
         margin: -2rem 1.5rem 0 1.5rem;
