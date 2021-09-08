@@ -3048,7 +3048,6 @@ body {
           justify-content: center;
   width: 100%;
   background-color: #262c47;
-  margin-top: auto;
 }
 
 .footer_content {
@@ -5580,8 +5579,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 97%;
-  height: 100%;
+  width: 98%;
+  height: 160px;
   position: relative;
   overflow: hidden;
 }
@@ -5594,7 +5593,8 @@ body {
 
 @media (max-width: 576px) {
   .navslider .navimahsjs {
-    width: 95%;
+    width: 98%;
+    top: -10px;
   }
 }
 
@@ -5618,6 +5618,13 @@ body {
   display: block;
 }
 
+@media (max-width: 576px) {
+  .navslider .navimahsjs img {
+    width: 100%;
+    height: 140px;
+  }
+}
+
 .navslider .navimahsjs small {
   position: absolute;
   top: 50%;
@@ -5639,7 +5646,7 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.55);
   }
 }
 
