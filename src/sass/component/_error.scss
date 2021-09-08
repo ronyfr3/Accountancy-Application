@@ -3,9 +3,14 @@
   .errcss {
     @include flex(column, center, center);
     text-align: center;
+    padding: 10px;
+    h1 {
+      color: crimson;
+    }
     small {
       margin-top: 0.2rem;
       @include font-size($p-font-sizes);
+      color: $c4;
     }
   }
 }

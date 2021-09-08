@@ -5792,10 +5792,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  padding: 10px;
+}
+
+.errorror .errcss h1 {
+  color: crimson;
 }
 
 .errorror .errcss small {
   margin-top: 0.2rem;
+  color: #056370;
 }
 
 @media screen and (min-width: 320px) {
