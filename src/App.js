@@ -38,9 +38,7 @@ const App = () => {
           </Suspense>
         </ErrorBoundary>
       </Switch>
-      <div className="footer">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 };
