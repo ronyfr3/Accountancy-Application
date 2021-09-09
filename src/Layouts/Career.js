@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../images/carousel1.jpg";
+import image from "../images/New folder//carousel1.jpg";
 const Career = () => {
   // malito
   const Mailto = ({ email, subject = "", body = "", children }) => {

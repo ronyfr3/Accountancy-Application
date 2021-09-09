@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
-import { AiOutlineLine } from "react-icons/ai";
-import { FaHandPointUp } from "react-icons/fa";
 import { useHistory } from "react-router-dom";
-import as from "../images/as.jpg";
-import vat from "../images/vat.jpg";
-import tax from "../images/tax.jpg";
-import pen from "../images/pen.jpg";
-import pay from "../images/pay.jpg";
-import work from "../images/work.jpg";
+import as from "../images//New folder/as.jpg";
+import vat from "../images/New folder/vat.jpg";
+import tax from "../images/New folder/tax.jpg";
+import pen from "../images/New folder/pen.jpg";
+import pay from "../images/New folder/pay.jpg";
+import work from "../images/New folder/work.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ServiceSection = () => {
@@ -121,7 +119,7 @@ const ServiceSection = () => {
               <React.Fragment key={i}>
                 {i === indx && (
                   <div className="serviceSec_info">
-                    <LazyLoadImage src={image} alt="title" effect="blur" />
+                    <LazyLoadImage src={image} alt="title" />
                     <div className="service_title_des">
                       <p className="service_title_des_title">{title}</p>
                       <small>{des}</small>

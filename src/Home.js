@@ -1,9 +1,9 @@
 import React from "react";
 import Map from "./Layouts/contact/Map";
 import image1 from "./images/joynal1.jpg";
-import loc1 from "./images/carousel2.jpg";
-import loc2 from "./images/carousel4.jpg";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import loc1 from "./images/New folder/carousel2.jpg";
+import loc2 from "./images/New folder/carousel4.jpg";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 import Slider from "./Components/Slider";
 import NavigationSlider from "./Components/NavigationSlider";
 const Home = () => {
@@ -34,7 +34,7 @@ const Home = () => {
               <button className="readmore">Read More</button>
             </div>
             <div className="Home_image_sec">
-              <LazyLoadImage src={image1} alt="" effect="blur" />
+              <img src={image1} alt="" />
             </div>
           </div>
           {/* LOCATIONS */}
@@ -44,7 +44,7 @@ const Home = () => {
             <div className="loc_image">
               <div className="loc_img_text">
                 <div className="ksksksshh">
-                  <LazyLoadImage src={loc1} alt="" effect="blur" />
+                  <img src={loc1} alt="" />
                 </div>
                 <div className="loc_text">
                   <h1 className="com_name">London Office</h1>
@@ -58,7 +58,7 @@ const Home = () => {
               </div>
               <div className="loc_img_text">
                 <div className="ksksksshh">
-                  <LazyLoadImage src={loc2} alt="" effect="blur" />
+                  <img src={loc2} alt="" />
                 </div>
                 <div className="loc_text">
                   <h1 className="com_name">Luton Office</h1>

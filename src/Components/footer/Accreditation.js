@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 import img1 from "../../images/xeroo.png";
 import img2 from "../../images/accas.jpg";
 import img3 from "../../images/book.jpg";
@@ -63,12 +63,7 @@ const Accreditation = () => {
           const { image } = x;
           return (
             <div className="image_accreditation" key={i}>
-              <LazyLoadImage
-                src={image}
-                alt=""
-                effect="blur"
-                className="acc_image"
-              />
+              <img src={image} alt="" className="acc_image" />
             </div>
           );
         })}

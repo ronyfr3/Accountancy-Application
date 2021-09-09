@@ -1,12 +1,12 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import as from "../images/as.jpg";
-import vat from "../images/vat.jpg";
-import tax from "../images/tax.jpg";
-import pen from "../images/pen.jpg";
-import pay from "../images/pay.jpg";
-import work from "../images/work.jpg";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
+import as from "../images//New folder/as.jpg";
+import vat from "../images/New folder/vat.jpg";
+import tax from "../images/New folder/tax.jpg";
+import pen from "../images/New folder/pen.jpg";
+import pay from "../images/New folder/pay.jpg";
+import work from "../images/New folder/work.jpg";
 import { Link } from "react-router-dom";
 const NavigationSlider = () => {
   const data = [
@@ -93,12 +93,7 @@ const NavigationSlider = () => {
           return (
             <div className="navimahsjs" key={title}>
               <Link to="/service">
-                <LazyLoadImage
-                  src={image}
-                  alt=""
-                  effect="blur"
-                  className="sliderrr_image"
-                />
+                <img src={image} alt="" className="sliderrr_image" />
                 <small>{title}</small>
               </Link>
             </div>

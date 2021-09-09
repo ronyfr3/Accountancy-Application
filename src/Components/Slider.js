@@ -1,10 +1,10 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import carousel1 from "../images/carousel1.jpg";
-import carousel2 from "../images/carousel2.jpg";
-import carousel3 from "../images/carousel3.jpg";
-import carousel4 from "../images/carousel4.jpg";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import carousel1 from "../images/New folder/carousel1.jpg";
+import carousel2 from "../images/New folder/carousel2.jpg";
+import carousel3 from "../images/New folder/carousel3.jpg";
+import carousel4 from "../images/New folder/carousel4.jpg";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useHistory } from "react-router-dom";
 const Slider = () => {
   let history = useHistory();
@@ -70,12 +70,7 @@ const Slider = () => {
           const { image, text } = x;
           return (
             <div className="slider_image_info" key={i}>
-              <LazyLoadImage
-                src={image}
-                alt=""
-                effect="blur"
-                className="slider_image"
-              />
+              <img src={image} alt="" className="slider_image" />
               <h1>{text}</h1>
               <button onClick={() => history.push("/about")}>Learn More</button>
             </div>

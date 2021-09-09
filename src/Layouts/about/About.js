@@ -37,7 +37,7 @@ const About = () => {
           </article>
         </div>
         <div className="whoweare_img_container">
-          <LazyLoadImage src={image} alt="" effect="blur" />
+          <LazyLoadImage src={image} alt="" />
         </div>
       </div>
 

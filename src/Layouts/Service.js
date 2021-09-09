@@ -1,11 +1,10 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import as from "../images/as.jpg";
-import vat from "../images/vat.jpg";
-import tax from "../images/tax.jpg";
-import pen from "../images/pen.jpg";
-import pay from "../images/pay.jpg";
-import work from "../images/work.jpg";
-import "react-lazy-load-image-component/src/effects/blur.css";
+import as from "../images//New folder/as.jpg";
+import vat from "../images/New folder/vat.jpg";
+import tax from "../images/New folder/tax.jpg";
+import pen from "../images/New folder/pen.jpg";
+import pay from "../images/New folder/pay.jpg";
+import work from "../images/New folder/work.jpg";
 const Service = () => {
   const data = [
     {
@@ -55,7 +54,7 @@ const Service = () => {
           >
             <h1>{title}</h1>
             <div className={`${i % 2 === 1 ? "skjskssjsjk" : "askdejne"}`}>
-              <LazyLoadImage src={image} alt={image} effect="blur" />
+              <LazyLoadImage src={image} alt={image} />
               <p>{des}</p>
             </div>
           </div>

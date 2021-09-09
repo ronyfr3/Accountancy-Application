@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 import image from "../../images/joynal2.jpg";
 import { BiMessageRoundedCheck } from "react-icons/bi";
 const Contact = () => {
@@ -94,7 +94,7 @@ const Contact = () => {
           </form>
         </div>
         <div className="form_img">
-          <LazyLoadImage src={image} alt="" effect="blur" />
+          <img src={image} alt="" />
         </div>
       </div>
       {/* email phone section */}
