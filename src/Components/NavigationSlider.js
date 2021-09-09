@@ -93,7 +93,12 @@ const NavigationSlider = () => {
           return (
             <div className="navimahsjs" key={title}>
               <Link to="/service">
-                <LazyLoadImage src={image} alt="" className="sliderrr_image" />
+                <LazyLoadImage
+                  src={image}
+                  alt=""
+                  effect="blur"
+                  className="sliderrr_image"
+                />
                 <small>{title}</small>
               </Link>
             </div>

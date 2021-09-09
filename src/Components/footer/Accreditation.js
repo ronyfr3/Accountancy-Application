@@ -63,7 +63,12 @@ const Accreditation = () => {
           const { image } = x;
           return (
             <div className="image_accreditation" key={i}>
-              <LazyLoadImage src={image} alt="" className="acc_image" />
+              <LazyLoadImage
+                src={image}
+                alt=""
+                effect="blur"
+                className="acc_image"
+              />
             </div>
           );
         })}

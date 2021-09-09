@@ -70,7 +70,12 @@ const Slider = () => {
           const { image, text } = x;
           return (
             <div className="slider_image_info" key={i}>
-              <LazyLoadImage src={image} alt="" className="slider_image" />
+              <LazyLoadImage
+                src={image}
+                alt=""
+                effect="blur"
+                className="slider_image"
+              />
               <h1>{text}</h1>
               <button onClick={() => history.push("/about")}>Learn More</button>
             </div>

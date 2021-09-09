@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../../images/joynal2.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import {
   FaLanguage,
   FaCrosshairs,
@@ -36,7 +37,7 @@ const About = () => {
           </article>
         </div>
         <div className="whoweare_img_container">
-          <img src={image} alt="" />
+          <LazyLoadImage src={image} alt="" effect="blur" />
         </div>
       </div>
 

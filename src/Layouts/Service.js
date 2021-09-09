@@ -5,6 +5,7 @@ import tax from "../images/tax.jpg";
 import pen from "../images/pen.jpg";
 import pay from "../images/pay.jpg";
 import work from "../images/work.jpg";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const Service = () => {
   const data = [
     {
@@ -54,7 +55,7 @@ const Service = () => {
           >
             <h1>{title}</h1>
             <div className={`${i % 2 === 1 ? "skjskssjsjk" : "askdejne"}`}>
-              <LazyLoadImage src={image} alt={image} />
+              <LazyLoadImage src={image} alt={image} effect="blur" />
               <p>{des}</p>
             </div>
           </div>

@@ -121,7 +121,7 @@ const ServiceSection = () => {
               <React.Fragment key={i}>
                 {i === indx && (
                   <div className="serviceSec_info">
-                    <LazyLoadImage src={image} alt="title" />
+                    <LazyLoadImage src={image} alt="title" effect="blur" />
                     <div className="service_title_des">
                       <p className="service_title_des_title">{title}</p>
                       <small>{des}</small>

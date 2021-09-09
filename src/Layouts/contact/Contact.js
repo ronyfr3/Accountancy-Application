@@ -94,7 +94,7 @@ const Contact = () => {
           </form>
         </div>
         <div className="form_img">
-          <LazyLoadImage src={image} alt="" />
+          <LazyLoadImage src={image} alt="" effect="blur" />
         </div>
       </div>
       {/* email phone section */}
