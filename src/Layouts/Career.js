@@ -18,8 +18,8 @@ const Career = () => {
       <div className="muetd">
         <h1>careers</h1>
         <p>
-          Choice Accountancy Ltd attracts and retains some of the best talent in
-          the field, offering career opportunities across accountancy, taxation,
+          Accountancy Ltd attracts and retains some of the best talent in the
+          field, offering career opportunities across accountancy, taxation,
           business advisory and our many specialisms. Our working culture is
           proactive and client-focused. Our people are diverse and sociable.
           Below are some of the roles we are accepting applicants for:
@@ -28,14 +28,14 @@ const Career = () => {
       <div className="muetd">
         <h1>SALES ACCOUNT MANAGER</h1>
         <p>Please email your CV for future opportunities.</p>
-        <Mailto email="info@priorityaccountancy.co.uk" subject="" body="">
+        <Mailto email="rakib.fstackdev@gmail.com" subject="" body="">
           <button>Send CV</button>
         </Mailto>
       </div>
       <div className="muetd">
         <h1>TRAINEE ACCOUNTANT</h1>
         <p>Please email your CV for trainee accountant opportunities.</p>
-        <Mailto email="info@priorityaccountancy.co.uk" subject="" body="">
+        <Mailto email="rakib.fstackdev@gmail.com" subject="" body="">
           <button>Send CV</button>
         </Mailto>
       </div>
