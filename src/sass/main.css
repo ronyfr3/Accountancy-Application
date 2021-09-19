@@ -4914,7 +4914,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .preloader_container .preloader::after {
-  content: "Priority Accountancy";
+  content: "Mr. Rakib";
   font-weight: 600;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
   height: 100%;
