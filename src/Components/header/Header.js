@@ -23,13 +23,13 @@ const Header = () => {
           <li>
             <span className="phonelogo">&#9990;</span>
             <div className="phnNum">
-              <p>+44 20 3355 8839</p>
-              <p> +44 1582432053</p>
+              <p>+880 1997513691</p>
+              <p>+880 1883921971</p>
             </div>
           </li>
-          <li>{/* <p>info@priorityaccountancy.co.uk</p> */}</li>
+          {/* <li>rakib.fstackdev@gmail.com</li> */}
           <div className="icons_header">
-            <Mailto email="info@priorityaccountancy.co.uk" subject="" body="">
+            <Mailto email="rakib.fstackdev@gmail.com" subject="" body="">
               <MdEmail className="header_social_icon4" />
             </Mailto>
             <AiFillTwitterCircle className="header_social_icon2" />
@@ -42,7 +42,7 @@ const Header = () => {
         <div className="header_image">
           <img src={image} alt="" />
           <div className="apdfn">
-            <b>Priority Accountancy</b>
+            <b>Accountancy</b>
             <small>we're here to assist your business succeed..</small>
           </div>
         </div>

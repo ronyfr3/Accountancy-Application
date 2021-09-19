@@ -43,9 +43,9 @@ const About = () => {
 
       {/* Why choose Priority? */}
       <div className="makesusdif">
-        <h1>Why choose Priority?</h1>
+        <h1>Why choose Us?</h1>
         <article>
-          At Oasis Accountants we offer expert advice with broad range of
+          At this Accountants we offer expert advice with broad range of
           specialist that offer customised solutions for clients. The Most
           fundamental way we are different from the rest is our client focused
           approach, understanding client's current and future business needs

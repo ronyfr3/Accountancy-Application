@@ -6,13 +6,13 @@ import { SiGmail } from "react-icons/si";
 import Accreditation from "./Accreditation";
 import { useDoubleTap } from "use-double-tap";
 const Footer = () => {
-  const [tx, setTx] = useState("Eazm Limited");
+  const [tx, setTx] = useState("Abdur Rakib Rony");
   const bind = useDoubleTap((event) => {
     setTx("Abdur Rakib Rony");
   });
   useEffect(() => {
     setTimeout(() => {
-      setTx("Eazm Limited");
+      setTx("Abdur Rakib Rony");
     }, 3000);
   });
 
@@ -85,29 +85,17 @@ const Footer = () => {
               </p>
               <p className="footer_contact_p">
                 <SiGmail className="footer_gmail_logo" />
-                info@priorityaccountancy.co.uk
+                rakib.fstackdev@gmail.com
               </p>
               {/* social logo */}
               <div className="icons_footer">
-                <a
-                  href="https://www.facebook.com/Priorityaccountant/"
-                  rel="noreferrer"
-                  target="_blank"
-                >
+                <a href="/" rel="noreferrer" target="_blank">
                   <FaFacebook className="footer_social_icon1" />
                 </a>
-                <a
-                  href="https://twitter.com/priorityacct/status/1197945663763484673?s=24"
-                  rel="noreferrer"
-                  target="_blank"
-                >
+                <a href="/" rel="noreferrer" target="_blank">
                   <AiFillTwitterCircle className="footer_social_icon2" />
                 </a>
-                <a
-                  href="https://twitter.com/priorityacct/status/1197945663763484673?s=24"
-                  rel="noreferrer"
-                  target="_blank"
-                >
+                <a href="/" rel="noreferrer" target="_blank">
                   <AiFillInstagram className="footer_social_icon3" />
                 </a>
                 {/* <IoLogoWhatsapp className="header_social_icon4" /> */}
@@ -119,7 +107,7 @@ const Footer = () => {
         <div className="bottom_Section_footer">
           <div className="hiddenname" {...bind}></div>
           <p className="powerdby">
-            © {new Date().getFullYear()} Priority Accountancy. Powered By{" "}
+            © {new Date().getFullYear()} Accountancy. Powered By{" "}
             <span className="eazmltd">{tx}</span>
           </p>
         </div>

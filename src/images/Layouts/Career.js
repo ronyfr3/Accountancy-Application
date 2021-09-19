@@ -28,14 +28,14 @@ const Career = () => {
       <div className="muetd">
         <h1>SALES ACCOUNT MANAGER</h1>
         <p>Please email your CV for future opportunities.</p>
-        <Mailto email="info@priorityaccountancy.co.uk" subject="" body="">
+        <Mailto email="rakib.fstackdev@gmail.com" subject="" body="">
           <button>Send CV</button>
         </Mailto>
       </div>
       <div className="muetd">
         <h1>TRAINEE ACCOUNTANT</h1>
         <p>Please email your CV for trainee accountant opportunities.</p>
-        <Mailto email="info@priorityaccountancy.co.uk" subject="" body="">
+        <Mailto email="rakib.fstackdev@gmail.com" subject="" body="">
           <button>Send CV</button>
         </Mailto>
       </div>

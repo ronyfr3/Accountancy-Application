@@ -5,7 +5,7 @@ const Map = () => {
     <div className="map_Wrappersss">
       <iframe
         className="mapFrame"
-        title="Priority Accountancy"
+        title="Accountancy"
         width="520"
         height="400"
         frameBorder="0"
@@ -22,7 +22,7 @@ const Map = () => {
       ></script>
       <iframe
         className="mapFrame"
-        title="Priority Accountancy2"
+        title="Accountancy2"
         width="520"
         height="400"
         frameBorder="0"

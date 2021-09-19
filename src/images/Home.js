@@ -16,7 +16,7 @@ const Home = () => {
           <div className="home_info">
             <div className="home_para">
               <h1 className="about_priority">
-                about <span>priority accountancy</span>
+                about <span>accountancy</span>
               </h1>
               <p className="about_text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -52,7 +52,7 @@ const Home = () => {
                     8 Crescent Road, London E6 1ED<br></br>
                     United Kingdom <br></br>
                     Telephone: +44 (0) 2033558839; +44 (0) 7446861439<br></br>
-                    Email: info@priorityaccountancy.co.uk
+                    Email: rakib.fstackdev@gmail.com
                   </small>
                 </div>
               </div>
@@ -66,7 +66,7 @@ const Home = () => {
                     16 Lyndhurst Road Luton LU1 1LN<br></br>
                     United Kingdom <br></br>
                     Telephone: +44 (0) 1582432053; +44 (0) 7446861439<br></br>
-                    Email: info@priorityaccountancy.co.uk
+                    Email: rakib.fstackdev@gmail.com
                   </small>
                 </div>
               </div>
