@@ -3592,6 +3592,11 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.footer_section .footer_contact .footer_contact_p .sakdca {
+  color: white;
+  text-transform: lowercase;
+}
+
 .footer_section .footer_contact .footer_phn_logo {
   font-size: 21px;
   color: white;

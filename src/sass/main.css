@@ -2143,6 +2143,7 @@ body::-webkit-scrollbar-thumb {
 .contact_form .mao .kopops .hashbbjask p {
   font-weight: 500;
   color: #39777c;
+  text-transform: lowercase;
 }
 
 @media screen and (min-width: 320px) {
@@ -3590,6 +3591,11 @@ body::-webkit-scrollbar-thumb {
     font-size: 30px;
     line-height: 1.6;
   }
+}
+
+.footer_section .footer_contact .footer_contact_p .sakdca {
+  text-transform: lowercase;
+  color: white;
 }
 
 .footer_section .footer_contact .footer_phn_logo {

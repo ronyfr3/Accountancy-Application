@@ -165,6 +165,7 @@
           @include font-size($p-font-sizes);
           font-weight: 500;
           color: $c5;
+          text-transform: lowercase;
         }
       }
     }

@@ -79,6 +79,10 @@
       @include font-size($p-font-sizes);
       @include flex(row, flex-start, flex-start);
       margin-bottom: 0.5rem;
+      .sakdca {
+        text-transform: lowercase;
+        color: white;
+      }
     }
     .footer_phn_logo {
       font-size: 21px;

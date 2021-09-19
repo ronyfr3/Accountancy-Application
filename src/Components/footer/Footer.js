@@ -85,7 +85,7 @@ const Footer = () => {
               </p>
               <p className="footer_contact_p">
                 <SiGmail className="footer_gmail_logo" />
-                rakib.fstackdev@gmail.com
+                <span className="sakdca">rakib.fstackdev@gmail.com</span>
               </p>
               {/* social logo */}
               <div className="icons_footer">

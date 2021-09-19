@@ -42,10 +42,7 @@ const About = () => {
           </article>
         </div>
         <div className="whoweare_img_container">
-          <LazyLoadImage
-            src="https://media.istockphoto.com/photos/young-businesswoman-in-a-modern-office-picture-id1291622774?b=1&k=20&m=1291622774&s=170667a&w=0&h=h9-SLbC5ZWfsqsOuCtBzbRNbnk97L1DzcxAV_oo9u24="
-            alt=""
-          />
+          <LazyLoadImage src="img1.jpg" alt="" />
         </div>
       </div>
 
