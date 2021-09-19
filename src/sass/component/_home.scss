@@ -192,6 +192,7 @@
               word-spacing: 0.5px;
               margin-bottom: 1.2em;
               @include font-size($p-font-sizes);
+              text-transform: lowercase;
             }
           }
         }

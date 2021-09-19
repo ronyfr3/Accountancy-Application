@@ -50,7 +50,7 @@ const Home = () => {
                   <small className="com_address">
                     8 Crescent Road, London E6 1ED<br></br>
                     United Kingdom <br></br>
-                    Telephone: +44 (0) 2033558839; +44 (0) 7446861439<br></br>
+                    Telephone: +44 (0) 5464502151; +44 (0) 514651535<br></br>
                     Email: rakib.fstackdev@gmail.com
                   </small>
                 </div>
@@ -64,7 +64,7 @@ const Home = () => {
                   <small className="com_address">
                     16 Lyndhurst Road Luton LU1 1LN<br></br>
                     United Kingdom <br></br>
-                    Telephone: +44 (0) 1582432053; +44 (0) 7446861439<br></br>
+                    Telephone: +44 (0) 635186358; +44 (0) 151513135<br></br>
                     Email: rakib.fstackdev@gmail.com
                   </small>
                 </div>

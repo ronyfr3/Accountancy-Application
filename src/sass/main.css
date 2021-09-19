@@ -3009,6 +3009,7 @@ body::-webkit-scrollbar-thumb {
   text-align: justify;
   word-spacing: 0.5px;
   margin-bottom: 1.2em;
+  text-transform: lowercase;
 }
 
 @media screen and (min-width: 320px) {
