@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../../images/joynal2.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import {
   FaLanguage,
@@ -20,8 +19,14 @@ const About = () => {
           <h1>Who We Are</h1>
           <h2>Professional accountants delivering excellent service</h2>
           <article>
-            Oasis Accountants are a team of Professional Accountants delivering
-            excellent service understanding clients business financial goals.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing
           </article>
           <article>
             Our Team makes continuous effort to offer competent, efficient and
@@ -37,7 +42,10 @@ const About = () => {
           </article>
         </div>
         <div className="whoweare_img_container">
-          <LazyLoadImage src={image} alt="" />
+          <LazyLoadImage
+            src="https://media.istockphoto.com/photos/young-businesswoman-in-a-modern-office-picture-id1291622774?b=1&k=20&m=1291622774&s=170667a&w=0&h=h9-SLbC5ZWfsqsOuCtBzbRNbnk97L1DzcxAV_oo9u24="
+            alt=""
+          />
         </div>
       </div>
 
@@ -45,21 +53,24 @@ const About = () => {
       <div className="makesusdif">
         <h1>Why choose Priority?</h1>
         <article>
-          At Oasis Accountants we offer expert advice with broad range of
-          specialist that offer customised solutions for clients. The Most
-          fundamental way we are different from the rest is our client focused
-          approach, understanding client's current and future business needs
-          with plans to action..
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing
         </article>
         <article>
-          The vision of the firm's founding Director, Shankar Devrashetty was to
-          create a dynamic and passionate firm. 10 years of development and
-          refinement has built the Oasis Accountants service offering into what
-          it is today. The core purpose of our approach is to provide you with
-          financial information that is truly meaningful as well as simply
-          stated. This combined with the highest levels of care and passion for
-          your business, has created an accountancy practice that is genuinely
-          different.
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing
         </article>
         <div className="icons_h5">
           <div className="sma_h5">

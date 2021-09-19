@@ -1,6 +1,5 @@
 import React from "react";
 import Map from "./Layouts/contact/Map";
-import image1 from "./images/joynal1.jpg";
 import loc1 from "./images/New folder/carousel2.jpg";
 import loc2 from "./images/New folder/carousel4.jpg";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -34,7 +33,10 @@ const Home = () => {
               <button className="readmore">Read More</button>
             </div>
             <div className="Home_image_sec">
-              <img src={image1} alt="" />
+              <img
+                src="https://media.istockphoto.com/photos/young-businesswoman-in-a-modern-office-picture-id1291622774?b=1&k=20&m=1291622774&s=170667a&w=0&h=h9-SLbC5ZWfsqsOuCtBzbRNbnk97L1DzcxAV_oo9u24="
+                alt=""
+              />
             </div>
           </div>
           {/* LOCATIONS */}
