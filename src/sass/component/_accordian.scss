@@ -1,0 +1,63 @@
+.accordian {
+  @include flex(column, center, center);
+  width: 100%;
+  margin: 1.5rem 0 3rem 0;
+  flex: 1 0 auto;
+  @include media(P) {
+    @include flex(column, center, center);
+  }
+  @include media(PL) {
+    @include flex(column, center, center);
+  }
+
+  .accordian_info {
+    @include flex(column, center, center);
+    width: 85%;
+    @include media(P) {
+      width: 90%;
+    }
+    @include media(PL) {
+      width: 90%;
+    }
+  }
+}
+.accordian_content {
+  margin-top: 1.3em;
+  width: 100%;
+  cursor: pointer;
+  border-left: 0.2rem solid #3c6382;
+  .question_icon {
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    .question {
+      padding: 0.7em;
+      @include font-size($p-font-sizes);
+      text-transform: capitalize;
+      background-color: #f1f2f6;
+      margin-right: 0.2rem;
+      width: 100%;
+    }
+    .arrow_faq {
+      color: #3c6382;
+      position: absolute;
+      top: 1rem;
+      right: 0.2rem;
+    }
+  }
+  .answer {
+    display: none;
+  }
+  .show {
+    display: flex;
+    background-color: #fffaf0;
+    padding: 1em;
+    @include font-size($p-font-sizes);
+    text-transform: capitalize;
+  }
+}
+
+.accordian_frequently_h1 {
+  @include font-size($h1-font-sizes);
+}
