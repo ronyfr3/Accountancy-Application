@@ -81,7 +81,7 @@ const Footer = () => {
             <div className="footer_address_section">
               <p className="footer_contact_p">
                 <span className="footer_phn_logo">&#9990;</span>
-                Tel: 02033558839; 01582432053; Mob: 07446861439
+                Mob: +880 1997513691 +880 1883921971
               </p>
               <p className="footer_contact_p">
                 <SiGmail className="footer_gmail_logo" />

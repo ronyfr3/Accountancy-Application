@@ -105,14 +105,13 @@ const Contact = () => {
         <div className="kopops">
           <div>
             <h2 className="oiop">Contact Number</h2>
-            <p>Tel: 02033558839; 01582432053</p>
-            <p> Mob: 07446861439</p>
+            <p> Mob: +880 1997513691 +880 1883921971</p>
           </div>
-          <Mailto email="Info@Priorityaccountancy.Co.Uk" subject="" body="">
+          <Mailto email="rakib.fstackdev@gmail.com" subject="" body="">
             <div className="hashbbjask">
               <BiMessageRoundedCheck className="BiMessageRoundedCheck" />
               <h2 className="mailto">Send Us A Message​​</h2>
-              <p>Info@Priorityaccountancy.Co.Uk</p>
+              <p>rakib.fstackdev@gmail.com</p>
             </div>
           </Mailto>
         </div>
